@@ -17,6 +17,9 @@ public class Main {
         // TODO code application logic here
        /* String path = System.getProperty("path.name");
         String temp = System.getProperty("temp.name"); */
+        System.out.println(System.getenv("TEMP"));
+         System.out.println(System.getenv("PATH"));
+          System.out.println(System.getenv("USERNAME"));
         String username = System.getProperty("user.name"); 
         System.out.print(username);
     }
