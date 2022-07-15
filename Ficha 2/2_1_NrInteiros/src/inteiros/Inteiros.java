@@ -7,7 +7,7 @@ public class Inteiros {
 		int a=Integer.parseInt(JOptionPane.showInputDialog("1º número a somar"));
 		int b=Integer.parseInt(JOptionPane.showInputDialog("2º número a somar"));
 		int soma=a+b;
-System.out.print("A soma dos dois números inseridos é igual a "+soma);
+		System.out.print("A soma dos dois números inseridos é igual a "+soma);
 	}
 
 }
