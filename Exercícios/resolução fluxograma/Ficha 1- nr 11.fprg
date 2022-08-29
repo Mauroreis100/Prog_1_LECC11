@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DELL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-12 02:58:47 AM"/>
+        <attribute name="created" value="REVMTDtERVNLVE9QLUc3UTlDMUQ7MjAyMi0wOC0xMjswMjo0NTozNyBBTTsyNTg3"/>
+        <attribute name="edited" value="REVMTDtERVNLVE9QLUc3UTlDMUQ7MjAyMi0wOC0xMjswMjo1ODo0NyBBTTsxOzI3MDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Valor" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um Valor: &quot;" newline="True"/>
+            <input variable="Valor"/>
+            <if expression="Valor &gt; 0">
+                <then>
+                    <output expression="&quot;Valor positivo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Valor = 0">
+                        <then>
+                            <output expression="&quot;Valor nulo&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Valor negativo&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

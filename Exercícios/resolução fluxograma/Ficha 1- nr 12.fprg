@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DELL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-15 09:05:05 AM"/>
+        <attribute name="created" value="REVMTDtERVNLVE9QLUc3UTlDMUQ7MjAyMi0wOC0xNTswODozOTo0OCBBTTsyNjAx"/>
+        <attribute name="edited" value="REVMTDtERVNLVE9QLUc3UTlDMUQ7MjAyMi0wOC0xNTswOTowNTowNSBBTTsxOzI2OTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Po, Pf1, Pf2" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o pre&#231;o original: &quot;" newline="True"/>
+            <input variable="Po"/>
+            <if expression="Po &gt; 2500">
+                <then>
+                    <assign variable="Pf1" expression="Po - (Po * 15/100)"/>
+                    <output expression="&quot;O preco a pagar sera: &quot;" newline="True"/>
+                    <output expression="Pf1" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="Pf2" expression="Po - (Po * 8/100)"/>
+                    <output expression="&quot;O preco a pagar sera: &quot;" newline="True"/>
+                    <output expression="Pf2" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

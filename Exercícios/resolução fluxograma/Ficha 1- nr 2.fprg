@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DELL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-12 04:16:41 AM"/>
+        <attribute name="created" value="REVMTDtERVNLVE9QLUc3UTlDMUQ7MjAyMi0wOC0xMjswMzowMTowMiBBTTsyNTcy"/>
+        <attribute name="edited" value="REVMTDtERVNLVE9QLUc3UTlDMUQ7MjAyMi0wOC0xMjswNDoxNjo0MSBBTTszOzI2OTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite primeira nota: &quot;" newline="True"/>
+            <input variable="nota1"/>
+            <output expression="&quot;Digite segunda nota: &quot;" newline="True"/>
+            <input variable="nota2"/>
+            <assign variable="media" expression="(nota1 + nota2)/2"/>
+            <if expression="media &gt;= 10">
+                <then>
+                    <output expression="&quot;Aprovado com primeira nota, segunda nota e media: &quot;" newline="True"/>
+                    <output expression="nota1" newline="True"/>
+                    <output expression="nota2" newline="True"/>
+                    <output expression="media" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Reprovado com primeira nota, segunda nota e media: &quot;" newline="True"/>
+                    <output expression="nota1" newline="True"/>
+                    <output expression="nota2" newline="True"/>
+                    <output expression="media" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
