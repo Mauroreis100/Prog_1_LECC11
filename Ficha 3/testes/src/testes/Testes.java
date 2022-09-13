@@ -4,47 +4,34 @@
  */
 package testes;
 
-import java.util.Scanner;
+
 
 /**
  *
  * @author mauro
  */
+import java.util.Scanner;
 public class Testes {
+public static void main (String[] args) {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        double a, b, c, x1, x2, delta;
-
-        Scanner ler = new Scanner(System.in);
-        System.out.println("Insira o valor de a");
-        a = ler.nextDouble();
-        System.out.println("Insira o valor de b");
-        b = ler.nextDouble();
-        System.out.println("Insira o valor de c");
-        c = ler.nextDouble();
-        if (a == 0) {
-            x1 = (-c / b);
-            System.out.println("Teremos uma equação linear quando a=0, com o resultado" + x1);
-        } else {
-            delta = Math.pow(b, 2) - 4 * a * c;
-            if (delta < 0) {
-                System.out.println("Não teremos raízes reais");
-            } else {
-                if (delta == 0) {
-                    x1 = (-b + Math.sqrt(delta)) / 2 * a;
-                    System.out.println("Teremos apenas uma unica solução, onde x1 e x2 será igual a " + x1);
-                } else {
-                    x1 = (-b + Math.sqrt(delta)) / 2 * a;
-                    x2 = (-b - Math.sqrt(delta)) / 2 * a;
-                    System.out.println("Teremos uma função quadrática com a=" + a + ", b=" + b + " e c=" + c + "com x1=" + x1 + " e " + "x2=" + x2);
-                }
-            }
-
-        }
-
-    }
+ Scanner ler = new Scanner(System.in);
+ 
+System.out.println("Digite 'A' para sorvete tipo A, 'B' para sorvete tipo B e 'C' para sorvete tipo C ");
+char sorvete=ler.next().charAt(0);
+System.out.println("Quanto custa o sorvete?");
+double custo=ler.nextDouble();
+double paga;
+switch(sorvete){
+    case 'a':
+        paga=custo-(0.1*custo);
+        System.out.println("O cliente irá pagar "+paga+"com 10% de desconto"+custo);
+        break;
+    default:
+        System.out.println("Opção Inválida");
+        break;
 }
+
+
+}
+}
+
