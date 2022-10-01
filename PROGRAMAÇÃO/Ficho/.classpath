@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="3_5Casting/src"/>
+	<classpathentry kind="src" path="5_15Palpite/src"/>
+	<classpathentry kind="src" path="5_17EspacoVogais/src"/>
+	<classpathentry kind="src" path="5_2Casting/src"/>
+	<classpathentry kind="src" path="5_9Raiz900/src"/>
+	<classpathentry kind="src" path="arredondar/src"/>
+	<classpathentry kind="output" path="arredondar/bin"/>
+</classpath>
