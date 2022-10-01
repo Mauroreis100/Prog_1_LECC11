@@ -16,30 +16,34 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-         // TODO code application logic here
+      
+        
+        
+        
         Scanner ler = new Scanner(System.in);
         System.out.println("Escreve a String");
         String frase = ler.nextLine();
-        System.out.println("Escreve a letra argumento");
-        char letra = ler.next().charAt(0);
+       // System.out.println("Escreve a letra argumento");
+       // char letra = ler.next().charAt(0);
         char percorre;
-        int tamanho=frase.length();
+        int tamanho = frase.length();
         String completo = "";
-        for (int i = 0; tamanho!=i; i++) {
+      // String conectores="";
+       // char conector;
+        for (int i = 0; tamanho!= i; i++) {
             percorre = frase.charAt(i);
-            completo = completo+percorre;
-            
-            
-            
-            
-            
-            if (percorre == letra) {
-                System.out.println(completo + ",");
+           // completo = completo + percorre;
+           if (i == 0) {
+                 percorre = frase.charAt(0);
+                 completo = completo + percorre+".";
             }
-
+            if (percorre == ' ') {
+                i++;
+                 percorre = frase.charAt(i);
+                 completo = completo + percorre+".";
+                i--;
+            }
         }
-        }
+        System.out.println(completo.toUpperCase());
     }
-    
 }

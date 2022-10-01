@@ -18,13 +18,23 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner ler = new Scanner(System.in);
-        System.out.println("Escreve o seu nome");
-        String frase = ler.nextLine();
-      
+        System.out.println("Escreve a String");
+        String antesfrase = ler.nextLine();
+        String frase = antesfrase.toLowerCase();
+        System.out.println("Escreve a letra argumento");
+        char letra = ler.next().charAt(0);
         char percorre;
         int tamanho=frase.length();
         String completo = "";
-      
+        for (int i = 0; tamanho!=i; i++) {
+            percorre = frase.charAt(i);
+            completo = completo+percorre;
+            
+            if (percorre == letra) {
+                System.out.println(completo + ",");
+            }
+
+        }
 
     }
 
