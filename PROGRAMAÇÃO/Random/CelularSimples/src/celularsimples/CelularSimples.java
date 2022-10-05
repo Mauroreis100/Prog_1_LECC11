@@ -47,7 +47,7 @@ public class CelularSimples {
                 }
                 break;
                 case 2: {
-                    System.out.println("Adicionando novo contacto");
+                    System.out.println("--------Adicionando novo contacto------");
                     String nome = JOptionPane.showInputDialog("Digite o nome");
                     int numero = Integer.parseInt(JOptionPane.showInputDialog("Digite o número"));
                     contacto = new Contacts(numero, nome);

@@ -55,8 +55,8 @@ public class StudentRecordManagement {
 
 			// Checking record by id Number
 			if (l.getIdNumber() == idNimber) {
-
 				System.out.println(l);
+                                System.out.println("TESTE");
 				return true;
 			}
 		}
