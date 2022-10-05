@@ -11,9 +11,9 @@ import java.io.Serializable;
 public class Contacts{
     
     //Variáveis de instância 
-     private int numeroTel;
+    private int numeroTel;
     private String nome;
-    
+
     // Construtor de Account sem parâmetros
     public Contacts() {
     }
@@ -52,6 +52,6 @@ public class Contacts{
     
 
     public String toString(){
-        return "------------------------------------\nLista de contactos:Nome: "+nome+"\n"+"Número_ "+numeroTel+"\n------------------------------";
+        return "\nNome: "+nome+"\n"+"Número: "+numeroTel+"\n";
     }
 }// fim da classe Contacts

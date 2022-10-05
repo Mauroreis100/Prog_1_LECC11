@@ -71,9 +71,9 @@ public class CelularSimples {
                 }
                 break;
                 case 5: {
-                    String nome = JOptionPane.showInputDialog("Digite o nome que quer imprimir");
-                    System.out.println(acessar.findContacto(nome).toString());
-
+                 //   String nome = JOptionPane.showInputDialog("Digite o nome que quer imprimir");
+                   // System.out.println(acessar.findContacto(nome).toString());
+System.out.print("Tem tudo?"+contacto.getNome()+contacto.getNumeroTel());
                 }
                 break;
 

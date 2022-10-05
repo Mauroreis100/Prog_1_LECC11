@@ -39,12 +39,17 @@ public class MobilePhone {
         }*/
 
         // System.out.print(contacts.getNome()+" "+find(contacts.getNome()));
-        if (find(contacts.getNome()) == false) {
+        if (find(contacts.getNome().toUpperCase()) == false) {
             lista.add(contacts);
+            
             //  System.out.println(contacts.toString());
+            JOptionPane.showMessageDialog(null,"Nome Inserido com Sucesso!");
+            System.out.println("\n"+contacts.getNome()+"\nInserido com Sucesso");
         } else {
             // Print statement
-            System.out.println("Contacto com este nome já existe");
+              JOptionPane.showMessageDialog(null,"Nome já Existe!","Alert",JOptionPane.WARNING_MESSAGE);
+            System.out.println("Nome: "+contacts.getNome()+"\nJá foi gravado!");
+           
         }
     }
 
@@ -56,9 +61,8 @@ public class MobilePhone {
         
        
         for (Contacts l : lista) {
-            if (nome.equals(l.getNome())) {
-                System.out.println(l);
-                System.out.println("TESTE");
+            if (nome.toUpperCase().equals(l.getNome().toUpperCase())) {
+               
                 return true;
             }
         }
@@ -105,11 +109,9 @@ public class MobilePhone {
         // Iterate Record list
         // using for each loop
         for (Contacts l : lista) {
-
-            // Checking record by id Number.
-            if (l.getNome().toUpperCase() == nome) {
+            if (nome.toUpperCase().equals(l.getNome().toUpperCase())) {
+               
                 return l;
-
             }
         }
         return null;
@@ -121,12 +123,12 @@ public class MobilePhone {
     // @param input
     public void update(String nome) {
 
-        if (!find(nome)) {
-            Contacts contacto = findContacto(nome);
+        if (find(nome.toUpperCase())) {
+            Contacts contacto=findContacto(nome);
             // Display message only
-            String nomeNovo = JOptionPane.showInputDialog("Nome do contacto");
-            int numeroNovo = Integer.parseInt(JOptionPane.showInputDialog("Qual é o número de:" + nome));
-
+            System.out.println(contacto);
+            String nomeNovo = JOptionPane.showInputDialog("Nome do novo ");
+            int numeroNovo = Integer.parseInt(JOptionPane.showInputDialog("Número novo"));
             contacto.setNome(nomeNovo);
             contacto.setNumeroTel(numeroNovo);
             System.out.println("Actualizado com sucesso");
