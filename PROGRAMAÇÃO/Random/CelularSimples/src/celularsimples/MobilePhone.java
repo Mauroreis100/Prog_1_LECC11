@@ -76,28 +76,19 @@ public class MobilePhone {
         Contacts apagarNr = null;
 
         // Iterating record list
-        for (Contacts ll : lista) {
-
-            // Finding record to be deleted by id Number
-            if (ll.getNome() == nome) {
-                apagarNr = ll;
-            }
-        }
-
-        // If recordDel is null, then show error message,
-        // otherwise remove the record from Record list
-        if (apagarNr == null) {
-
+        
+        
+        if (findContacto(nome.toString()) == null) {
             // Displaying no record found
-            System.out.println("Nome não existe");
+            JOptionPane.showMessageDialog(null,"Nome não exite!");
+            System.out.println(nome+" não existe!");
         } else {
-
+            apagarNr=findContacto(nome);
             lista.remove(apagarNr);
-
             // Display message for successful deletion of
             // record
-            System.out.println(
-                    "Successfully removed record from the list");
+            JOptionPane.showMessageDialog(null,"Removido com sucesso!");
+            System.out.println(nome+", foi Removido com sucesso");
         }
     }
 
@@ -110,7 +101,6 @@ public class MobilePhone {
         // using for each loop
         for (Contacts l : lista) {
             if (nome.toUpperCase().equals(l.getNome().toUpperCase())) {
-               
                 return l;
             }
         }
@@ -131,7 +121,8 @@ public class MobilePhone {
             int numeroNovo = Integer.parseInt(JOptionPane.showInputDialog("Número novo"));
             contacto.setNome(nomeNovo);
             contacto.setNumeroTel(numeroNovo);
-            System.out.println("Actualizado com sucesso");
+            JOptionPane.showMessageDialog(null,"Actualizado com sucesso!");
+            System.out.println("Actualizado com sucesso!");
             System.out.println("--------------------------------------");
         } else {
 
