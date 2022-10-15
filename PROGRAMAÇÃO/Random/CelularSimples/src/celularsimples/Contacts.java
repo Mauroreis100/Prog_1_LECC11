@@ -14,20 +14,20 @@ public class Contacts{
     private int numeroTel;
     private String nome;
 
-    // Construtor de Account sem parâmetros
+    //Construtor de Account sem parâmetros
     public Contacts() {
     }
     
-// Construtor de Contacts que recebe 1 parâmetro
+        // Construtor de Contacts que recebe parâmetro nome
     public Contacts(String nome) {
-        // atribui numeroTel à variável de instância numeroTel
-        this.nome=nome;
+       
+        this.nome=nome; // atribui numeroTel à variável de instância numeroTel
     }
     
-// Construtor de Account que recebe dois parâmetros
+    //Construtor de Account que recebe dois parâmetros
     public Contacts(int numeroTel, String nome) {
-        // atribui numeroTel e nome à variável de instância numeroTel e nome
-        this.numeroTel = numeroTel;
+        
+        this.numeroTel = numeroTel;// atribui numeroTel e nome à variável de instância numeroTel e nome
         this.nome = nome;
         
     }
@@ -52,6 +52,7 @@ public class Contacts{
     
 
     public String toString(){
+        //Impressão das variaveis nome e numero de telefone
         return "\nNome: "+nome+"\n"+"Número: "+numeroTel+"\n";
     }
 }// fim da classe Contacts
