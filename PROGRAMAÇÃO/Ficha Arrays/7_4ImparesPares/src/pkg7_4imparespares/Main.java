@@ -3,18 +3,49 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package pkg7_4imparespares;
-
+import java.util.Scanner;
+import java.util.Arrays;
 /**
  *
  * @author mauro
  */
 public class Main {
-
+   public static Scanner ler = new Scanner(System.in);
+    public static int[] a = new int[10];
     /**
      * @param args the command line arguments
      */
+        public static int[] preencherArray(int nrs[]) {
+        for (int i = 0; i < a.length; i++) {
+            System.out.println("Insira o " + (i + 1) + "º nr: ");
+            int numero = ler.nextInt();
+            a[i] = numero;
+        }
+
+        return a;
+    }
+        
+        public static void troca(int [] nrs){
+		for(int i=0; i<nrs.length; i++){
+
+				if(nrs[i]%2==0){
+					nrs[i]=nrs[i]+1;
+				}else{
+                                nrs[i]=nrs[i]-1;
+                                }
+		}
+
+	}
+
     public static void main(String[] args) {
-        // TODO code application logic here
+      /* Crie um método que recebe um array de inteiros positivos e substitui 
+               seus elementos de valor ímpar por -1 e os pares por +1.*/
+     
+preencherArray(a);
+System.out.println("Os valores eram: "+Arrays.toString(a));
+troca(a);
+System.out.println("E depois da troca ficou: "+Arrays.toString(a));
+
     }
     
 }

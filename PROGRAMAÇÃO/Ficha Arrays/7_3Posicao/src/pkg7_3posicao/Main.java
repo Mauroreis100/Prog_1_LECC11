@@ -51,10 +51,11 @@ caso o elemento não exista no vetor, informe o usuário*/
 
         
        if(a[procura(numero)]==numero){
-       System.out.print("O número que procura ocupa a posição: "+procura(numero)+"");
+       System.out.println("O número que procura ocupa a posição: "+procura(numero)+"");
        }else{
-           System.out.print("O número que procura está não foi encontrado");
+           System.out.println("O número que procura está não foi encontrado");
        }
+       System.out.println("Os valores eram: "+Arrays.toString(a));
     }
 
 }
