@@ -1,3 +1,4 @@
+#Exercício 26
 codigo=int(input('Insira o código do aluno: '))
 nota1=eval(input('Qual foi a 1ª nota do aluno'))
 nota2=eval(input('Qual foi a 2ª nota do aluno'))

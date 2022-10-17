@@ -1,3 +1,4 @@
+#Exercício 50
 print("Quantos termos da sequência de Fibonacci pretende ver?")
 a=0
 b=1

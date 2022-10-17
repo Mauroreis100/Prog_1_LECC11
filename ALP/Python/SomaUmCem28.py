@@ -1,3 +1,4 @@
+#Exercício 28
 a=0
 for i in range(1,101):
    a=a+i

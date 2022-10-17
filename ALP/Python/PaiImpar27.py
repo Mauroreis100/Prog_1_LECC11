@@ -1,3 +1,4 @@
+#Exercício 27
 a=int(input('Digite um número para saber se é par ou ímpar: '))
 if a>0:
     print("Este número é positivo e ")

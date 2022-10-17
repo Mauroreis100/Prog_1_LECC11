@@ -1,6 +1,8 @@
+#Exercício 46
 n=int(input('Insira quantos números da sequência quer ver: '))
 i=1
 e=1
+n=n-1
 while i<=n:
     fact=1
     j=i

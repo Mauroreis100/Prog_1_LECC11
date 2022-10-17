@@ -1,4 +1,4 @@
-
+#Exercício 37
 massa=eval(input('Qual é a massa do material radioactivo: '))
 a=0
 while massa>0.05:
