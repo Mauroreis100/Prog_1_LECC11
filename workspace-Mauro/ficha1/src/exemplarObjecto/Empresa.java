@@ -3,6 +3,7 @@ package exemplarObjecto;
 public class Empresa {
 	private int id;
 	private String nome, endereco;
+
 	public Empresa() {
 	}
 
@@ -17,10 +18,11 @@ public class Empresa {
 	}
 
 	@Override
-	//generate toString
+	// generate toString
 	public String toString() {
 		return "Empresa [id=" + id + ", nome=" + nome + ", endereco=" + endereco + "]";
 	}
+	
 
 	public int getId() {
 		return id;
