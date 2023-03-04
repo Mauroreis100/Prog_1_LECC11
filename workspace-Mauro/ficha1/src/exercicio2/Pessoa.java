@@ -2,18 +2,19 @@ package exercicio2;
 
 public class Pessoa {
 	// Definição das variaveis da classe
-	private int id, idade;
-	private String nome, nacionalidade;
+	 int id, idade;
+	String nome, nacionalidade;
 
-	// Metodo da classe pessoa, vazio
+	// Construtor da classe pessoa, vazio
 	public Pessoa() {
 	}
-//metodo de id soz
+
+//Construtor de id soz
 	public Pessoa(int id) {
 		this.id = id;
 	}
 
-	// metodo da classe pessoa com todas as variaveis, usado para definir os valores
+	// Construtor da classe pessoa com todas as variaveis, usado para definir os valores
 	// das variaveis
 	public Pessoa(int id, String nome, int idade, String nacionalidade) {
 		this.id = id;
@@ -58,16 +59,15 @@ public class Pessoa {
 		this.nacionalidade = nacionalidade;
 	}
 
-	//Metodo to string pega todos os dados da classe e imprime de uma vez
+	// Metodo to string pega todos os dados da classe e imprime de uma vez
 	@Override
 	public String toString() {
 		return "Pessoa [nome=" + nome + ", nacionalidade=" + nacionalidade + ", id=" + id + ", idade=" + idade + "]";
 	}
 
 	/*
-	 * Acho que ao inves de to string temos de usar este...
-	 * public static String imprimiDadosPessoa(Pessoa p) { //implementação método
-	 * return "fsa"; }
+	 * Acho que ao inves de to string temos de usar este... public static String
+	 * imprimiDadosPessoa(Pessoa p) { //implementação método return "fsa"; }
 	 */
 
 }
