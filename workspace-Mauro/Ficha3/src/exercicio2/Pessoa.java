@@ -15,5 +15,10 @@ public class Pessoa {
 	public String imprimir() {
 		return "pessoa [nome=" + nome + ", id=" + id + ", idade=" + idade + ", qtdidade=" + qtdidade + "a idade actual é"+(CompletarAnos()+idade)+"]";
 	}
+
+	
+	
+	
 		
+
 }
