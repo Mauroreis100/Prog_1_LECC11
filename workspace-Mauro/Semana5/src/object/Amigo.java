@@ -8,9 +8,18 @@ public class Amigo extends Pessoa{
 		this.dataAniversario=dataAniversario;
 	}
 
+	public Calendar getDataAniversario() {
+		return dataAniversario;
+	}
+
+	public void setDataAniversario(Calendar dataAniversario) {
+		this.dataAniversario = dataAniversario;
+	}
+
 	@Override
 	public String toString() {
-		return super.toString()+"\nAmigo [dataAniversario=" + dataAniversario + "]";
+		return super.toString()+"\nFez/faz anos no dia " + dataAniversario.get(Calendar.DAY_OF_MONTH)+"/" +
+				dataAniversario.get(Calendar.MONTH)+"/"+dataAniversario.get(Calendar.YEAR);
 	}
 
 	

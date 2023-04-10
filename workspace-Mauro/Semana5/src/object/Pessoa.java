@@ -30,7 +30,7 @@ public void setIdade(float idade) {
 }
 @Override
 public String toString() {
-	return "A Pessoa de nome=" + nome + "\n, SEXO=" + sexo + "com Idade=" + idade + "]";
+	return "A Pessoa de nome " + nome + "\nsexo:" + sexo + "\ncom Idade=" + idade;
 }
 
 }

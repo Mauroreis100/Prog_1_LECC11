@@ -6,10 +6,20 @@ public class Aniversario {
 	private static Object object;
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Calendar rightNow = Calendar.getInstance();
+Calendar DataAniversario = Calendar.getInstance();
 		
-Amigo ani=new Amigo("Mauro",'F',12,rightNow);	
-System.out.println(ani.toString());}
+		/*
+		DataAniversario.set(21,1,2007);
+		*/
+		DataAniversario.set(Calendar.DAY_OF_MONTH,21);
+		DataAniversario.set(Calendar.MONTH,3);
+		DataAniversario.set(Calendar.YEAR, 2004);
+
+		Amigo a = new Amigo("St",'M',(short) 12,DataAniversario);
+		
+		
+		System.out.println(a.toString());
+
 
 }
+	}
