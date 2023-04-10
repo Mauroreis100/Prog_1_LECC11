@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="61"/>
+	<classpathentry kind="src" path="Encapsulamento4/src"/>
+	<classpathentry kind="src" path="ficha1/src"/>
+	<classpathentry kind="src" path="ficha2/src"/>
+	<classpathentry kind="src" path="ficha2v1/src"/>
+	<classpathentry kind="src" path="Ficha3/src"/>
+	<classpathentry kind="src" path="Semana3/src"/>
+	<classpathentry kind="src" path="Semana5/src"/>
+	<classpathentry kind="output" path="Ficha3/bin"/>
+</classpath>
