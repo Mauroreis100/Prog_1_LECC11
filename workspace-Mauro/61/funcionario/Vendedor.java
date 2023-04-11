@@ -1,6 +1,6 @@
 package funcionario;
 
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 
 public class Vendedor extends Funcionario {
 	private double comissao_vendas;
@@ -30,7 +30,7 @@ public class Vendedor extends Funcionario {
 		double valor = 0;
 		
 		for (int i = 0; i < numero_vendas; i++) {
-			valor = Double.parseDouble(JOptionPane.showInputDialog("Insira o preço do produto:"));
+			//valor = Double.parseDouble(JOptionPane.showInputDialog("Insira o preço do produto:"));
 			comissao_vendas = comissao_vendas + (valor * 5 / 100);
 		}
 		setSalario(getSalario() + (int)comissao_vendas);
