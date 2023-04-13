@@ -25,7 +25,7 @@ public class Executar {
 		
 		//System.out.println(mouse.getDescricao());
 		for(int i = 0; i< carrinho1.length; i++) {
-			System.out.println(carrinho1[i]);
+			System.out.println(carrinho1[i].toString());
 		}
 	
 		

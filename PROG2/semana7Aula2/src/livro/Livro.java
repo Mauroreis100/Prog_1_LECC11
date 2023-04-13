@@ -27,7 +27,7 @@ public class Livro extends Produto {
 
 	@Override
 	public String toString() {
-		return toString()+"Livro [autor=" + autor + "]"+getDescricao();
+		return super.toString()+"Livro [autor=" + autor + "]"+getDescricao();
 	}
 
 	//public Livro() {}
