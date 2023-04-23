@@ -6,7 +6,7 @@ public class Funcionario2 {
 	private int num_doc;
 	private double salario;
 
-	//Este e o meu contrutor com todos os atributos da classe
+	//Este e o meu contrutor com todos os atributos da classe, para que sejam passados para as subclasses
 	public Funcionario2(String nome, String tipo_doc, int num_doc, double salario) {
 		this.nome = nome;
 		this.tipo_doc = tipo_doc;

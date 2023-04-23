@@ -1,6 +1,6 @@
 package Funcionario;
 
-public abstract class Vendedor extends Funcionario {
+public class Vendedor extends Funcionario {
 	protected double vendas;
 	public Vendedor(String nome, double salario, double bonus, double desconto, double vendas) {
 		super(nome, salario, bonus, desconto);
@@ -21,6 +21,12 @@ public abstract class Vendedor extends Funcionario {
 	
 	public String toString() {
 		return super.toString()+ " Vendedor";
+	}
+
+	@Override
+	public double calcularPagamento(double salario) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 		

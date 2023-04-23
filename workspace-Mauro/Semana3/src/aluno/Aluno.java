@@ -37,5 +37,16 @@ public class Aluno {
 		return "Aluno [nome=" + nome + ", matricula=" + matricula + ", idade=" + idade + ", nota1=" + nota1 + ", nota2="
 				+ nota2 + ", nota3=" + nota3 + ", Situacao: "+ situacao();
 	}
+	public static void main(String[] args) {
+		//Como não tem um contructor com parametros o java cria um sozinho
+		Aluno al=new Aluno();
+		al.setIdade((short)21);
+		al.setMatricula(32);
+		al.setNome("Mauro");
+		al.setNota1(20);
+		al.setNota2(20);
+		al.setNota3(20);
+		System.out.println(al.toString());
+	}
 
 }

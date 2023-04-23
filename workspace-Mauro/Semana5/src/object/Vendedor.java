@@ -17,9 +17,9 @@ public class Vendedor extends Funcionario2 {
 	 */
 
 	public Vendedor(String nome, String tipo_doc, int num_doc, double salario, double comissao) {
-		// Contrutor da subclassse
+		// Contrutor da subclassse que vem com parametros da superclasse + o atributo que tem aqui mesmo
 		super(nome, tipo_doc, num_doc, salario);
-		this.comissao = comissao;
+		this.comissao = 300;
 
 	}
 
@@ -41,13 +41,12 @@ public class Vendedor extends Funcionario2 {
 	}
 
 //Overriding comissao
-	public double calculaSalario(double percentagem) {
-		/*
-		 * Fez vendas equivalente a 20000 entao dos 20000 tiramos 5% e entregamos ao
-		 * salario
-		 */
+	/*public double calculaSalario(double percentagem) {
+		 Fez vendas equivalente a 20000 entao dos 20000 tiramos 5% e entregamos ao
+		 salario
+		 
 		return getSalario() + comissao * (percentagem / 100);
-	}
+	}*/
 
 	public void setComissao(double comissao) {
 		this.comissao = comissao;
@@ -58,7 +57,7 @@ public class Vendedor extends Funcionario2 {
 		// Comissao: "+calculaSalario();
 
 		return super.toString() + "\nComissao de Vendas: " + comissao + "\nSalario + Comissao: " + calculaSalario()
-				+ "\nComissao variavel:" + calculaSalario(40);
+				+ "\nComissao variavel:" + calculaSalario();
 	}
 
 	public void imprimir() {
