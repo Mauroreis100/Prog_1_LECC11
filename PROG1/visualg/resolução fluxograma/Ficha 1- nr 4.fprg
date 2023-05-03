@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DELL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-12 04:41:25 AM"/>
+        <attribute name="created" value="REVMTDtERVNLVE9QLUc3UTlDMUQ7MjAyMi0wOC0xMjswNDoyMDozMiBBTTsyNTc3"/>
+        <attribute name="edited" value="REVMTDtERVNLVE9QLUc3UTlDMUQ7MjAyMi0wOC0xMjswNDo0MToyNSBBTTsyOzI2OTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="anonascimento, idade, anoactual, ano" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite seu ano de nascimento: &quot;" newline="True"/>
+            <input variable="anonascimento"/>
+            <output expression="&quot;Digite o ano actual: &quot;" newline="True"/>
+            <input variable="anoactual"/>
+            <assign variable="idade" expression="anoactual - anonascimento"/>
+            <if expression="idade &gt;= 18">
+                <then>
+                    <output expression="idade" newline="True"/>
+                    <output expression="&quot;Pode votar &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="idade" newline="True"/>
+                    <output expression="&quot;Nao pode votar &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

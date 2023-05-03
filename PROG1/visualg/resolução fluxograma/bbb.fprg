@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DELL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-16 11:21:39 PM"/>
+        <attribute name="created" value="REVMTDtERVNLVE9QLUc3UTlDMUQ7MjAyMi0wOC0xMjswNToxNTo1MSBQTTsyNTk4"/>
+        <attribute name="edited" value="REVMTDtERVNLVE9QLUc3UTlDMUQ7MjAyMi0wOC0xNjsxMToyMTozOSBQTTsyOzI3MTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, x, D, x1, x2" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite valor de a : &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Digite valor de b : &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Digite valor de c : &quot;" newline="True"/>
+            <input variable="c"/>
+            <if expression="a = 0">
+                <then>
+                    <output expression="&quot;&#196; equacao e linear de solucao: &quot;" newline="True"/>
+                    <assign variable="x" expression="-b/c"/>
+                    <output expression="x" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Equacao quadratica com valor D igual a: &quot;" newline="True"/>
+                    <assign variable="D" expression="b^2-(4*a*c)"/>
+                    <output expression="" newline="True"/>
+                    <output expression="D" newline="True"/>
+                    <if expression="D &lt; 0">
+                        <then>
+                            <output expression="&quot;Nao existe solucao para conjunto dos reais&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="D &gt;= 0">
+                                <then/>
+                                <else/>
+                            </if>
+                            <assign variable="x1" expression="(-b+(D)^(1/2))/2*a"/>
+                            <output expression="x1" newline="True"/>
+                            <assign variable="x2" expression="(-b-(D)^(1/2))/2*a"/>
+                            <output expression="x2" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,204 @@
+correcao
+1-
+import java.util.Scanner;
+import java.lang.Math;
+public class ex1{
+	public static void main(String args[]){
+		Scanner ler=new Scanner(System.in);
+		int x,y,z;
+		
+		System.out.println("Insira tres nrs: ");
+		x=ler.nextInt();
+		y=ler.nextInt();
+		z=ler.nextInt();
+		System.out.println("O menor valor e: "+acharM(x,y,z));
+	}
+		
+		public static int acharM(int x, int y, int z){
+			int min=0, min2=0;
+			min=Math.min(x,y);
+			min2=Math.min(min,z);
+			
+			return min2;
+		}
+	
+}
+
+
+//
+2-
+
+import java.util.Scanner;
+public class ex2{
+	public static int V[]=new int[15];
+	public static int X[]=new int[15];
+	public static Scanner ler=new Scanner(System.in);
+	
+	public static void main(String[] args){
+		preencherV();
+		preencherX();
+		acharNrs(V,X);
+		
+	}
+	
+	public static void preencherV(){
+		for(int i=0;i<V.length;i++){
+			System.out.println("Insira o "+(i+1)+"o nr");
+			V[i]=ler.nextInt();
+		}
+	}
+	
+		public static void preencherX(){
+		for(int i=0;i<V.length;i++){
+			System.out.println("Insira o "+(i+1)+"o nr");
+			X[i]=ler.nextInt();
+		}
+	}
+	
+	public static void acharNrs(int V[],int X[]){
+		int cont=0;
+		System.out.println("Os nrs que sao iguais sao: ");
+		for(int i=0;i<V.length;i++){
+			if(V[i]==X[i]){
+				 cont++;
+				System.out.println(V[i]);
+			}
+		}
+		System.out.println("A quantidade de vezes que os dois conjuntos apresentam nrs iguais= "+cont);
+		
+	}
+	
+	
+	
+}
+
+
+
+//
+3-
+import java.util.*;
+
+public class ex3{
+	public static Scanner ler=new Scanner(System.in);
+	public static int n;
+	public static void main(String[] args){
+		
+		System.out.println("Insira a quantidade de contactos que pretende inserir: ");
+		int n=ler.nextInt();
+		String V[]=new String[n];
+		String nrs[]=new String[n];
+		
+		preencherV(V,nrs);
+		pesquisar(V,nrs);
+	
+	}
+	public static void preencherV(String V[], String nrs[]){
+		
+		for(int i=0;i<V.length;i++){
+			System.out.println("Insira o "+(i+1)+"o contacto, nome : ");
+			V[i]=ler.next();
+			System.out.println("Insira o nr de "+V[i]);
+			nrs[i]=ler.next();
+		}
+		
+		System.out.println("Inseracao de dados concluida: ");
+	}
+	
+	public static void pesquisar(String V[], String nrs[]){
+		int pesq=1;
+		String mensagem="Nao existe esse nome!";
+		String nomeInserido;
+		while(pesq==1){
+			System.out.println("Insira o nome da pessoa para obter o numero: ");
+			nomeInserido=ler.next();
+			
+			for(int i=0;i<V.length;i++){
+				if(V[i].equalsIgnoreCase(nomeInserido)){
+					mensagem= nrs[i];
+					
+				}
+			}
+			System.out.println("Resultado: "+mensagem+" ");
+			pesq=0;
+			System.out.println("Para continuar a pesquisa insira 1: ");
+			pesq=ler.nextInt();
+			
+			
+		}
+		
+	}
+}
+
+
+//
+
+4-
+import java.util.Scanner;
+public class ex4{
+	
+	public static int V[]=new int[5];
+	public static int menor;
+	public static int menor1;
+	public static int maior;
+	public static int maior1;
+	public static int soma=0;
+	public static double media=0;
+	public static Scanner ler=new Scanner(System.in);
+	
+	public static void main(String[] args){
+		preencherV(V);
+		maior1=acharmaior(V);
+		menor1=acharmenor(V);
+		
+			for(int i=0;i<V.length;i++){
+			if(V[i]!=menor1 && V[i]!=maior1){
+				soma=soma+V[i];
+			}	
+			}
+		media=(soma)/3;
+		System.out.println("A media das notas: ");
+			for(int i=0;i<V.length;i++){
+				System.out.print(V[i]+", ");
+			}
+		System.out.print("");
+		System.out.println("excluindo "+menor1+" e "+maior1+" ="+media);
+		
+	}	
+		
+		public static void preencherV(int [] V){
+			System.out.println("Preencha com 5 nrs: ");
+			for(int i=0;i<V.length;i++){
+				V[i]=ler.nextInt();
+			}
+		}
+		
+		public static int acharmaior(int V[]){
+			maior=V[0];
+			
+			for(int i=0;i<V.length;i++){
+				if(V[i]>maior){
+					maior=V[i];
+				}
+			}
+			return maior;
+		}
+		
+		public static int acharmenor(int V[]){
+			menor=V[0];
+			
+			for(int i=0;i<V.length;i++){
+				if(V[i]<menor){
+					menor=V[i];
+				}
+			}
+			return menor;
+		}		
+		
+		
+		
+		
+		
+		
+	
+	
+}
