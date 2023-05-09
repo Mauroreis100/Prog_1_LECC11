@@ -128,3 +128,4 @@ class LinkedList {
 		LL.listAll();
 	}
 }
+//https://www.canva.com/design/DAFKlVWz4yg/-RgsURvkHZGtj152WuFLCw/edit?analyticsCorrelationId=ffe13f5c-887b-4678-a9fb-1b0c827e5041
