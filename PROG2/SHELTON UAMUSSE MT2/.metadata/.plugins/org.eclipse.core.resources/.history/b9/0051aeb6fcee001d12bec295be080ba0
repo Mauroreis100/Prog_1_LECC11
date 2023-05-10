@@ -1,0 +1,19 @@
+package ex3;
+
+public class Gerente extends Funcionario{
+
+	
+	public Gerente(String nome, double salarioBase) {
+		super(nome, salarioBase);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public
+	
+	double calcularSalario() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

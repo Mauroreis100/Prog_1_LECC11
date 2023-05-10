@@ -1,0 +1,24 @@
+package ex3;
+
+public class Empresa {
+	private Funcionario [] funcionarios;
+	private int c;
+	
+	
+	
+	public Empresa(Funcionario[] funcionarios, int c) {
+		
+		this.funcionarios = funcionarios;
+		this.c = 0;
+	}
+
+
+
+	public void adicionarFunc (int nrFuncionario) {
+		
+		if(c < funcionarios.length) {
+			
+		}
+	}
+
+}

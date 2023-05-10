@@ -1,0 +1,16 @@
+package ex3;
+
+public class Designer extends Funcionario  {
+
+	public Designer(String nome, double salarioBase) {
+		super(nome, salarioBase);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	double calcularSalario() {
+		// TODO Auto-generated method stub
+		return (7000)+0.15*7000;
+	}
+
+}

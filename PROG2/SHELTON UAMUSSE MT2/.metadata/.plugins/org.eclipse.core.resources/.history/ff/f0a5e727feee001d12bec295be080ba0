@@ -1,0 +1,39 @@
+package ex3;
+
+public class Empresa {
+	private Funcionario [] funcionarios;
+	private int c;
+	
+	
+	
+	public Empresa(Funcionario[] funcionarios, int c) {
+		
+		funcionarios = new F;
+		this.c = 0;
+	}
+
+
+
+	public void adicionarFunc (Funcionario funcionario) {
+		
+		if(c < funcionarios.length) {
+			funcionarios[c] = funcionario;
+            c++;
+		}
+	}
+	
+	
+	public double calcularSalarioTotal() {
+		
+        double salarioTotal = 0.0;
+
+        for (int i = 0; i < c; i++) {
+            salarioTotal += funcionarios[i].calcularSalario();
+        }
+
+        return salarioTotal;
+    }
+
+	
+	
+}

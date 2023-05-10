@@ -1,0 +1,11 @@
+package ex3;
+
+public class Empresa {
+	private Funcionario [] funcionarios;
+	private int c;
+	
+	public Empresa (int nrFuncionario) {
+		
+	}
+
+}

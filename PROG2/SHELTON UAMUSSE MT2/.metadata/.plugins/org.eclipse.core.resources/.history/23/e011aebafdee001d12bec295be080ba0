@@ -1,0 +1,23 @@
+package ex3;
+
+public class Empresa {
+	private Funcionario [] funcionarios;
+	private int c;
+	
+	
+	
+	public Empresa(Funcionario[] funcionarios, int c) {
+		
+		this.funcionarios = funcionarios;
+		this.c = 0;
+	}
+
+
+
+	public Empresa (int nrFuncionario) {
+		if(c < nrFuncionario) {
+			
+		}
+	}
+
+}

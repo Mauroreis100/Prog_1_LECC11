@@ -1,0 +1,6 @@
+package ex3;
+
+public interface calcularS {
+	
+	pubblic abstract double calcularSalario();
+}
