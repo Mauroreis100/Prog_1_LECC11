@@ -1,0 +1,9 @@
+package funcionarios;
+import funcionario.Funcionario;
+public class Designer extends Funcionario{
+
+	public Designer() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

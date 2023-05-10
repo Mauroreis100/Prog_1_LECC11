@@ -1,0 +1,39 @@
+package relatorio;
+
+import implementar.Salario;
+import funcionario.Funcionario;
+import funcionarios.*;
+import java.util.*;
+
+public class Empresa {
+	private int tamanho = 0;
+	private Funcionario f[] = new Funcionario[1];
+
+	public Funcionario[] getF() {
+		return f;
+	}
+
+	public int getTamanho() {
+		return tamanho;
+	}
+
+	public void setTamanho(int tamanho) {
+		this.tamanho = tamanho;
+	}
+
+	public void add(Funcionario fun) {
+		f[getTamanho()] = fun;
+		setTamanho(getTamanho()+1);
+		}
+	public double calculo() {
+		double total=0;
+		for(int i=0;i<getF().length;i++) {
+		   total=getF()[i].getBonus();
+		}
+		return total;
+	}
+	public void impressaoTotal() {
+		System.out.println("O salário total de todos so funcionários da empresa é "+ calculo());
+	}
+ 
+}

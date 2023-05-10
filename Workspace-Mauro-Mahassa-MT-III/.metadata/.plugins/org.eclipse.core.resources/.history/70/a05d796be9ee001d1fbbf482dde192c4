@@ -1,0 +1,6 @@
+package funcionario;
+
+public abstract class Funcionario {
+	protected double salBase=0;
+	protected double bonus;
+}

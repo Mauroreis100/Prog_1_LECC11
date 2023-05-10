@@ -1,0 +1,9 @@
+package implementar;
+
+public class Salario {
+
+	public Salario() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

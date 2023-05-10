@@ -1,0 +1,14 @@
+package funcionarios;
+import funcionario.Funcionario;
+public class Designer extends Funcionario{
+
+	public Designer(double salBase, double bonus) {
+		this.salBase=7000;
+		this.bonus=0.15;
+		super(salBase, bonus);
+	}
+	 public double salario() {
+			// TODO Auto-generated method stub
+			return salBase+(salBase*bonus);
+		}
+}

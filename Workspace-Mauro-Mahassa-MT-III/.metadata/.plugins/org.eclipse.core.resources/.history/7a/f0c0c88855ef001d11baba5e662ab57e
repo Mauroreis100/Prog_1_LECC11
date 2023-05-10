@@ -1,0 +1,39 @@
+package main;
+import funcionario.Funcionario;
+import funcionarios.*;
+import relatorio.Empresa;
+import java.util.*;
+
+public class Main {
+
+
+	public static void main(String[] args) {
+		Scanner ler=new Scanner(System.in);
+		Funcionario designer=new Designer(22,3);
+		Funcionario gerente=new Gerente(22,3);
+		Funcionario desenvolvedor=new Desenvolvedor(22,3);
+		
+		Empresa emp=new Empresa();
+		emp.add(desenvolvedor);
+		int opcao;
+		int adicionar;
+		do {
+			System.out.println("0 - SAIR\n1 - ADICIONAR FUNCIONÁRIO\n2 - IMPRIMIR SALÁRIO TOTAL DE TODOS OS FUNCIONÁRIOS\n");
+			opcao=ler.nextInt();	
+switch(opcao) {
+case 0:
+	System.out.println("SAINDO DO PROGRAMA");
+	break;
+case 1:
+	adicionar=ler.nextInt();
+	System.out.println("Que Funcionario pretende adicionar ao array de"+""+"elementos\n----------\n0. Voltar\n1.Gerente\n2. Designer\n3. Desenvolvedor");
+	switch(adicionar) {
+	
+	}
+	
+}
+		}while(opcao!=0);
+		System.out.println(emp.getF()[1].salario());
+	}
+
+}

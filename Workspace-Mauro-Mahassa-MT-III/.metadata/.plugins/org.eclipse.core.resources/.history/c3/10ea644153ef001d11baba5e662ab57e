@@ -1,0 +1,19 @@
+package relatorio;
+import implementar.Salario;
+import funcionario.Funcionario;
+import funcionarios.*;
+import java.util.*;
+
+public class Empresa {
+private Funcionario f[] = new Funcionario[5];
+
+public Funcionario[] getF() {
+	return f;
+}
+
+public Funcionario[] add(Funcionario fun) {
+	f[1]=fun;
+	return Funcionario;
+}
+		
+}
