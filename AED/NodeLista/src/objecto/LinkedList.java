@@ -96,6 +96,7 @@ class LinkedList {
 			currentNode.next = newNode;
 			return true;
 		}
+		
 	}
 
 	public static void main(String args[]) {
