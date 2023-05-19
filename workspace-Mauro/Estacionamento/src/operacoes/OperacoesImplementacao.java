@@ -19,13 +19,13 @@ public class OperacoesImplementacao implements Operacoes {
 	}
 
 	@Override
-	public Veiculo procurar(Vector estacionamento, long matricula) {
+	public Veiculo procurar(Vector estacionamento, String matricula) {
 
 		for (int i = 0; i < estacionamento.size(); i++) {
 			if ((((Veiculo) estacionamento.get(i)).getMatricula()).equals(matricula)) {
 				return (Veiculo)estacionamento.get(i);
 			} else {
-				System.out.println();
+				System.out.print("TESTE");
 				
 			}
 		}

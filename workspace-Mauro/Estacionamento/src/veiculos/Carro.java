@@ -3,7 +3,7 @@ package veiculos;
 import java.util.Date;
 
 import estacionamento.Veiculo;
-
+//Carrega todas as propriedades de um veículo + neste temos o numero de portas
 public class Carro extends Veiculo{
 private int nrDePortas;
 	public Carro(String nomeCondutor, String marca, String modelo, String matricula, String cor, Date dataEntrada,

@@ -7,7 +7,7 @@ import estacionamento.Veiculo;
 public interface Operacoes {
 public void inserir(Veiculo veiculo, Vector estacionamento);
 public void listar(Vector estacionamento);
-public Veiculo procurar(Vector estacionamento,long matricula);
+public Veiculo procurar(Vector estacionamento,String matricula);
 public void procuraMarca(Vector estacionamento,String marca);
 public void acimaDaHora();
 }

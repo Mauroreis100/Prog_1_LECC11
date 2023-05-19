@@ -3,7 +3,7 @@ package estacionamento;
 import java.util.Date;
 
 public class Veiculo {
-
+//Todos os veículos têm estes atributos
 	private String nomeCondutor, marca, modelo, matricula, cor;
 	private Date dataEntrada;
 
@@ -67,7 +67,7 @@ public class Veiculo {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Nome do Condutor";
+		return "ESTACIONAMENTO LIBERDADE\nNome"+nomeCondutor+"\nMarca: "+marca+"\nModelo:"+modelo+"\nMatricula:"+matricula;
 	}
 
 }
