@@ -1,0 +1,63 @@
+package ListasEncadeadas;
+
+public class ListaLigada {
+
+	private Node primeiro;
+	private Node ultimo;
+	private int tamanho;
+	
+	//Construtor
+	public ListaLigada() {
+		this.tamanho=0;
+	}
+	
+	//Metodo para adicionar um elemento
+	public void adicionarValor(String valor) {
+		Node newNode = new Node(valor);
+		/*Se a primeira e ultima posicoe estiverem vazias,isso significa que
+		a lista esta vazia e so adicionamos um elemento*/
+		if(this.primeiro==null && this.ultimo==null) {
+			this.primeiro=newNode;
+			this.ultimo=newNode;
+			this.tamanho++; //Um elemento foi adicionado
+		}
+	}
+	
+	//Metodo para remover um valor
+	public void removerValor() {
+		
+	}
+	
+	//Metodo para retornar um elemento
+	public int retornarElemento(int indice) {
+		
+		return 0;
+	}
+	
+	//Metodo para percorrer a lista
+	
+	
+	
+	//Getters e Setters
+	public Node getPrimeiro() {
+		return primeiro;
+	}
+	public void setPrimeiro(Node primeiro) {
+		this.primeiro = primeiro;
+	}
+	public Node getUltimo() {
+		return ultimo;
+	}
+	public void setUltimo(Node ultimo) {
+		this.ultimo = ultimo;
+	}
+	public int getTamanho() {
+		return tamanho;
+	}
+	public void setTamanho(int tamanho) {
+		this.tamanho = tamanho;
+	}
+	
+	
+	
+}

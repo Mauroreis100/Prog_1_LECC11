@@ -1,0 +1,30 @@
+package ListasEncadeadas;
+
+public class ExecutaEncadeada {
+
+	public static void main(String[] args) {
+		
+		
+		ListaLigada lista = new ListaLigada();
+		
+		//Adicionar elementos
+		lista.adicionarValor("Maputo");
+		lista.adicionarValor("Gaza");
+		lista.adicionarValor("Inhambane");
+		lista.adicionarValor("Sofala");
+		
+		//Saber o tamnaho da lista
+		System.out.println("Tamanho da lista "+lista.getTamanho());
+		
+		//Imprimir o primeiro e o ultimo valor
+		System.out.println("Primeiro valor: "+lista.getPrimeiro().getValor());
+		System.out.println("Ultimo valor: "+lista.getUltimo().getValor());
+		
+		//Imprimir valor numa posicao especifica
+		System.out.println(lista.retornarElemento(0).getValor());
+		System.out.println(lista.retornarElemento(1).getValor());
+		System.out.println(lista.retornarElemento(2).getValor());
+		System.out.println(lista.retornarElemento(3).getValor());
+	}
+
+}

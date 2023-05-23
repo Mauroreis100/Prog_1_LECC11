@@ -1,0 +1,21 @@
+package ListasEncadeadas;
+
+public class Node {
+	
+	private int valor;
+	private Node proximo;
+	
+	//Getters e Setters
+	public int getValor() {
+		return valor;
+	}
+	public void setValor(int valor) {
+		this.valor = valor;
+	}
+	public Node getProximo() {
+		return proximo;
+	}
+	public void setProximo(Node proximo) {
+		this.proximo = proximo;
+	}
+}	

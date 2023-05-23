@@ -1,0 +1,18 @@
+package Exercicio_2;
+
+import java.util.*;
+
+public class Numeros {
+
+	private double menor;
+	private double maior;
+	
+	//Construtor
+	public Numeros() {
+		this.menor=0;
+		this.maior=0;
+	}
+	
+	//Metodos
+	
+}

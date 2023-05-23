@@ -1,0 +1,21 @@
+package ListasEncadeadas;
+
+public class ExecutaEncadeada {
+
+	public static void main(String[] args) {
+		
+		
+		ListaLigada lista = new ListaLigada();
+		
+		//Adicionar elementos
+		lista.adicionarValor("Maputo");
+		lista.adicionarValor("Gaza");
+		lista.adicionarValor("Inhambane");
+		lista.adicionarValor("Sofala");
+		
+		//Saber o tamnaho da lista
+		System.out.println("Tamanho da lista "+lista.getTamanho());
+		//lista.recuperarTamanho();
+	}
+
+}

@@ -1,0 +1,84 @@
+package Exercicio_2;
+
+public class Filmes {
+	
+	private int numeroFilme;
+	private String nome;
+	private String genero;
+	private int anoLancamento;
+	
+	//Construtor
+	public Filmes(int numeroFilme,String nome,String genero,int anoLancamento) {
+		this.numeroFilme=numeroFilme;
+		this.nome=nome;
+		this.genero=genero;
+		this.anoLancamento=anoLancamento;
+	}
+	
+	//Metodo para listar os filmes
+	public void listarFilmes() {
+		
+	}
+	
+	//Verificar se um filme existe
+	public boolean verificarExistencia(String filme,Vector v) {
+		for(int i=0;;) {
+			
+		}
+	}
+	//Metodo para atualizar o genero
+	public void atualizarGenero(String filme,String genero) {
+		
+	}
+	
+	//Listar filmes atraves do ano de lancamento
+	public void filmeAnoLancamento(int anoLancamento) {
+		for() {
+			
+		}
+	}
+	
+	//Devolver o nome atraves do indice fornecido
+	public String nomeAtravesIndice(int indice) {
+		
+		return null;
+	}
+	
+	
+	
+	
+	
+	//Getters e Setters
+	public int getNumeroFilme() {
+		return numeroFilme;
+	}
+
+	public void setNumeroFilme(int numeroFilme) {
+		this.numeroFilme = numeroFilme;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getGenero() {
+		return genero;
+	}
+
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
+
+	public int getAnoLancamento() {
+		return anoLancamento;
+	}
+
+	public void setAnoLancamento(int anoLancamento) {
+		this.anoLancamento = anoLancamento;
+		
+	}
+}

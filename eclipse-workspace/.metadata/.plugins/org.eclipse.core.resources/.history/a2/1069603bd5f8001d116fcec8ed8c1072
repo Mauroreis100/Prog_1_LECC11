@@ -1,0 +1,26 @@
+package Exercicio_2;
+
+import java.util.*;
+
+public class Numeros {
+
+	private double menor;
+	private double maior;
+	
+	//Construtor
+	public Numeros() {
+		this.menor=0;
+		this.maior=0;
+	}
+	
+	//Metodos
+	public int getMenorMaior(Vector vetor) {
+		
+		for(int i=0;i<vetor.size();i++) {
+			if(vetor.get(i)>this.maior) {
+				
+			}
+		}
+		return 0;
+	}
+}
