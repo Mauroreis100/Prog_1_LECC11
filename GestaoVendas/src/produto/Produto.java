@@ -2,8 +2,9 @@ package produto;
 
 public class Produto {
 private int id;
-private String nome;
-private int qtd;
+private String nome,tipo;
+private int qtd;//qtd
+private int vendas;//Quantas vezes este produto foi vendido?
 
 /*No momento que lês para inserir um produto no vector
 Decidi não lidar com a quantidade,
@@ -11,13 +12,13 @@ Para colocar no carrinho, a quantidade muda "Virtualmente"
 Ou seja não fez a mudança necessariamente porque pode remover do carrinho
 que seria devolver o produto a prateleira
 */ 
-public Produto(int id, String nome) {
+public Produto(int id,String nome) {
 	this.id=id;
+	//this.tipo=tipo;
 	this.nome=nome;
-}
-public Produto(int qtd) {
 	this.qtd=qtd;
 }
+
 public int getId() {
 	return id;
 }

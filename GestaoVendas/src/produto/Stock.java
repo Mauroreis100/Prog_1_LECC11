@@ -9,6 +9,7 @@ public class Stock {
 - Caso exista, apenas aumenta a quantidade daquele produto
 - Caso não exista coloque um produto novo que vai ocupar uma posição nova
 */
+	//Adicionar produtos no armazém
 	public Vector adicionarNovoProduto(Vector lista, Produto prod) {
 		if(existe(prod.getNome(),lista)) {
 			int index=procurarNome(prod.getNome(),lista);
@@ -60,6 +61,15 @@ public class Stock {
 		}
 		
 		return lista;
+	}
+	
+	public int procurarCodigo(Vector lista,int codigo) {
+		for (int i = 0; i < lista.size(); i++) {
+			if( ((Produto)lista.get(i)).getId() ==codigo) {
+				return i;
+			}
+		}
+		return -1;
 	}
 
 	//Este método diminui a quantidade de um produto por 

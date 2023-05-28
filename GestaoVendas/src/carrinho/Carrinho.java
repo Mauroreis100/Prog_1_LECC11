@@ -11,7 +11,10 @@ public Carrinho(String nome, Vector produtos) {
 	this.iva = 16/100;
 	this.produtos=produtos;
 }
-
+public Carrinho(Vector produtos) {
+	this.produtos=produtos;
+}
+public Carrinho() {}
 public String getNome() {
 	return nome;
 }
