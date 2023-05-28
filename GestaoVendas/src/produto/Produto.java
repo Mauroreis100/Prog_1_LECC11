@@ -5,6 +5,12 @@ private int id;
 private String nome;
 private int qtd;
 
+/*No momento que lês para inserir um produto no vector
+Decidi não lidar com a quantidade,
+Para colocar no carrinho, a quantidade muda "Virtualmente"
+Ou seja não fez a mudança necessariamente porque pode remover do carrinho
+que seria devolver o produto a prateleira
+*/ 
 public Produto(int id, String nome) {
 	this.id=id;
 	this.nome=nome;
@@ -30,6 +36,8 @@ public int getQtd() {
 public void setQtd(int qtd) {
 	this.qtd = qtd;
 }
+
+//TENHO CONSTRUTOR DE quantidade que será usado para recuperar (eu acho)
 public Produto(int id, String nome, int qtd) {
 	this.id = id;
 	this.nome = nome;

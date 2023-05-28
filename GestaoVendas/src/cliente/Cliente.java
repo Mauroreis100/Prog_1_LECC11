@@ -7,6 +7,9 @@ public class Cliente {
 private int id;
 private String nome;
 private Vector compras;
+/*O cliente tem um vector de todas as compras já feitas 
+Caso tenha de recuperar ou iniicializar pela primeira vez, este construtor leva o vector, vazio 
+ou não*/
 public Cliente(int id, String nome, Vector compras) {
 	this.id = id;
 	this.nome = nome;
