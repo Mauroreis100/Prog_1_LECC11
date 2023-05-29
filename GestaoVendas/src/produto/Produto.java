@@ -86,6 +86,8 @@ public String toString() {
 	builder.append(nome);
 	builder.append(", qtd=");
 	builder.append(qtd);
+	builder.append(", preco=");
+	builder.append(preco);
 	builder.append("]");
 	return builder.toString();
 }

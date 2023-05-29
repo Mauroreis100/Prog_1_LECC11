@@ -172,7 +172,7 @@ public class Main {
 							switch (opcaoProduto) {
 							case 1:
 								// Adicionar produtos no Stock
-								int codigo = stock.capacity();
+								int codigo = stock.size();
 								System.out.println("Quantidade da encomenda: ");
 								int qtd = ler.nextInt();
 								ler.nextLine();
@@ -202,7 +202,7 @@ public class Main {
 								System.out.println("ID do produto que pretende pesquisar: ");
 								id = ler.nextInt();
 								int indice=armazem.procurarCodigo(stock, id);
-								if(indice!=0) {
+								if(indice!=-1) {
 									System.out.println(((Produto)stock.get(indice)).toString());
 								}else {
 								 System.out.println("Produto inexistente");
@@ -221,6 +221,7 @@ public class Main {
 
 								break;
 							case 6:
+								armazem.imprimirTodos(stock);
 								break;
 							default:
 								System.out.println("OPÇÃO INVÁLIDA! TENTE DE NOVO");
