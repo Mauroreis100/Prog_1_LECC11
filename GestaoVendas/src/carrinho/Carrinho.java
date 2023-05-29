@@ -5,6 +5,7 @@ import produto.Produto;
 public class Carrinho {
 private String nome;//Nome do Shopping;Location
 private double iva;
+private double total;
 private Vector produtos;
 public Carrinho(String nome, Vector produtos) {
 	this.nome = nome;
@@ -13,6 +14,13 @@ public Carrinho(String nome, Vector produtos) {
 }
 public Carrinho(Vector produtos) {
 	this.produtos=produtos;
+}
+
+public double getTotal() {
+	return total;
+}
+public void setTotal(double total) {
+	this.total = total;
 }
 public Carrinho() {}
 public String getNome() {

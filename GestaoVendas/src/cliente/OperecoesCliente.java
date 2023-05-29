@@ -2,6 +2,9 @@ package cliente;
 
 import java.util.Vector;
 
+import carrinho.Carrinho;
+import produto.Produto;
+
 public class OperecoesCliente {
 
 	public boolean adicionarCliente(Vector lista, Cliente cl) {
@@ -25,9 +28,27 @@ public class OperecoesCliente {
 		}
 		return -1;
 	}
-	public void compra(int id, Cliente cl, Vector lista, Vector compra) {
-		int index = lista.indexOf(cl);
-		((Cliente) lista.get(index)).setCompras(compra);
+	/*Recebe o ID do cliente que está a usar o programa no da compra
+	 * Recebe a lista de clientes
+	 * E recebe o cliente
+	 * Compra recebe o objecto carrinho depois de seleccionar tudo que quer comprar
+	 * 
+	 * */
+	public boolean compraIVA(int id, Vector lista, Carrinho compra) {
+		int index = procuraID(lista,id);
+		double soma=0;
+		if(index!=-1) {
+			for (int i = 0; i < compra.getProdutos().size(); i++) {
+					soma+=((Produto)compra.getProdutos().get(i)).getPreco();
+			}
+			compra.setTotal(soma);
+			((Cliente) lista.get(index)).setCompra(compra);
+			System.out.println("COMPRA FEITA COM SUCESSO\nTOTAL = "+compra.getTotal()+"MT");
+			return true;
+		}
+		System.out.println("FALHA NA COMPRA! TENTE DENOVO");
+		return false;
+		
 	}
 	// TENHO DE APLICAR IVA AQUI
 	/*

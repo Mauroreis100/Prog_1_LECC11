@@ -5,6 +5,7 @@ private int id;
 private String nome,tipo;
 private int qtd;//qtd
 private int vendas;//Quantas vezes este produto foi vendido?
+private double preco;
 
 /*No momento que lês para inserir um produto no vector
 Decidi não lidar com a quantidade,
@@ -17,8 +18,28 @@ public Produto(int id,String nome) {
 	//this.tipo=tipo;
 	this.nome=nome;
 	this.qtd=qtd;
+	this.vendas=vendas;
 }
 
+
+public String getTipo() {
+	return tipo;
+}
+public void setTipo(String tipo) {
+	this.tipo = tipo;
+}
+public int getVendas() {
+	return vendas;
+}
+public void setVendas(int vendas) {
+	this.vendas = vendas;
+}
+public double getPreco() {
+	return preco;
+}
+public void setPreco(double preco) {
+	this.preco = preco;
+}
 public int getId() {
 	return id;
 }
@@ -36,6 +57,18 @@ public int getQtd() {
 }
 public void setQtd(int qtd) {
 	this.qtd = qtd;
+}
+//ToStrig para imprimir vendas
+public String imprimiVendas() {
+	StringBuilder builder = new StringBuilder();
+	builder.append("Produto [id=");
+	builder.append(id);
+	builder.append(", nome=");
+	builder.append(nome);
+	builder.append(", VENDAS=");
+	builder.append(vendas);
+	builder.append("]");
+	return builder.toString();
 }
 
 //TENHO CONSTRUTOR DE quantidade que será usado para recuperar (eu acho)

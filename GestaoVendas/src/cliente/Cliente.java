@@ -2,10 +2,13 @@ package cliente;
 
 import java.util.Vector;
 
+import carrinho.Carrinho;
+
 public class Cliente {
 
 	private int id;
 	private String nome, bi;
+	private Carrinho compra;
 	private Vector compras;
 
 	/*
@@ -13,11 +16,19 @@ public class Cliente {
 	 * ou iniicializar pela primeira vez, este construtor leva o vector, vazio ou
 	 * não
 	 */
-	public Cliente(int id, String bi, String nome, Vector compras) {
+	public Cliente(int id, String bi, String nome, Carrinho compra) {
 		this.id = id;
 		this.bi = bi;
 		this.nome = nome;
-		this.compras = compras;
+		this.compra = compra;
+	}
+
+	public Carrinho getCompra() {
+		return compra;
+	}
+
+	public void setCompra(Carrinho compra) {
+		this.compra = compra;
 	}
 
 	public String getBi() {

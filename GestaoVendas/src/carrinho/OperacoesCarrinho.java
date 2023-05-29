@@ -24,7 +24,7 @@ public Vector removerProduto(int id,Carrinho cart) {
 			return cart.getProdutos();
 		}
 	}
-	System.out.println("não ECONTRAMOS");
+	System.out.println("NÃO ECONTRAMOS");
 
 	return cart.getProdutos();
 }

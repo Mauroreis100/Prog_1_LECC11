@@ -41,10 +41,11 @@ public class Main {
 		
 		
 		Scanner ler = new Scanner(System.in);
+		
 		Random aleatorio = new Random();
 
 		int operacao;
-
+		int id;//Usando variavel id para todos requisitos
 		do {// OPERAÇÕES PRINCIPAL E TELA DE BEM-VINDO
 			System.out.println(
 					"BEM VINDO A LOJA XXXXXX\n SELECCIONE A SUA OPÇÃO\n1.Comprar\n2. Mais Opções(Cliente/Produto/Vendas)\n0. SAIR\n>>>");
@@ -133,12 +134,13 @@ public class Main {
 							case 1:
 								// 1-INSERIR CLIENTE
 								Vector compras = new Vector();
+								Carrinho vazio=new Carrinho();
 								int codigo = 3;
 								System.out.println("BI DO CLIENTE:");
 								String bi = ler.next();
 								System.out.println("Nome do Cliente:");
 								String nome = ler.next();
-								Cliente cl = new Cliente(codigo, bi, nome, compras);
+								Cliente cl = new Cliente(codigo, bi, nome, vazio);
 								opCliente.adicionarCliente(clientes, cl);
 								break;
 							case 2:
@@ -165,34 +167,63 @@ public class Main {
 						int opcaoProduto;
 						do {
 							System.out.println(
-									"OPERAÇÕES PRODUTO\n1. Encomendar produto\n2. Actualizar Produto\n3. Remover Produto\n4. Pesquisar Produto\n5. Emitir Relatórios do Stock\n0. SAIR E SALVAR ALTERAÇÕES\n>>>");
+									"OPERAÇÕES PRODUTO\n1. Encomendar produto\n2. Actualizar Produto\n3. Remover Produto\n4. Pesquisar Produto\n5. Emitir Relatórios do Stock\n6. Ver todos os produtos\n0. SAIR E SALVAR ALTERAÇÕES\n>>>");
 							opcaoProduto = ler.nextInt();
 							switch (opcaoProduto) {
 							case 1:
 								// Adicionar produtos no Stock
-								int codigo = 12;
-								System.out.println("Nome do produto que pretende encomendar:");
-								String nomeProduto = ler.next();
-								System.out.println("Quantidade da encomenda");
+								int codigo = stock.capacity();
+								System.out.println("Quantidade da encomenda: ");
 								int qtd = ler.nextInt();
+								ler.nextLine();
+								
+								System.out.println("Nome do produto que pretende encomendar: ");
+								String nomeProduto=ler.nextLine();
+							
+								System.out.println("Preço do produto: ");
+								
 								Produto prod = new Produto(codigo, nomeProduto, qtd);
 								armazem.adicionarNovoProduto(stock, prod);
 								break;
 							case 2:
 								// 2 - Actualizar dados do Produto
-
+								System.out.println("ID do produto que pretende actualizar:");
+								id = ler.nextInt();
+								armazem.editarDadoProduto(stock,id);
 								break;
 							case 3:
 								// 3 - Remover Produto
+								System.out.println("ID do produto que pretende remover:");
+								id = ler.nextInt();
+								armazem.removerProduto(stock,id);
 								break;
 							case 4:
 								// Pesquisar Produto
+								System.out.println("ID do produto que pretende pesquisar: ");
+								id = ler.nextInt();
+								int indice=armazem.procurarCodigo(stock, id);
+								if(indice!=0) {
+									System.out.println(((Produto)stock.get(indice)).toString());
+								}else {
+								 System.out.println("Produto inexistente");
+								}
+								
 								break;
 							case 5:
 								// Emitir Relatórios do Stock (produtos abaixo de 5 unidades e produtos mais
 								// vendidos)
+								System.out.println("PRODUTOS ABAIXO DE 5 UNIDADES! RESTOCK!!");
+								armazem.abaixoDe5(stock);
+
+								System.out.println("Listagem de quantos produtos mais vendidos?");
+								int quantos=ler.nextInt();
+								armazem.maisVendidos(stock,quantos);
+
+								break;
+							case 6:
 								break;
 							default:
+								System.out.println("OPÇÃO INVÁLIDA! TENTE DE NOVO");
 								break;
 							}
 						} while (opcaoProduto != 0);// FIM DA OPERAÇÕES DE PRODUTOS
