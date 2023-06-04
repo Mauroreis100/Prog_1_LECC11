@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author mauro
- *
- */
-module GestaoVendas {
-}
