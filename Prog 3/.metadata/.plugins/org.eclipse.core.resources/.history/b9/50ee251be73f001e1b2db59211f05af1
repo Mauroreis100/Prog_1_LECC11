@@ -1,0 +1,20 @@
+package classcast;
+
+public class Castando {
+	String carro;
+
+	public static void main(String[] args) {
+		//ClassCastException
+		Object objecto = new Integer(0);
+		
+		System.out.println((String)objecto); 
+		
+		//IllegalArgumentException  
+		
+		//NullPointerException
+		
+		//NumberFormatException
+		
+		//NegativeArraySizeException
+	}
+}

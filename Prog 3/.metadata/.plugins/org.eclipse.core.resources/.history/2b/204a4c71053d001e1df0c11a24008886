@@ -1,0 +1,15 @@
+package main;
+
+public class Simulacao {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String nulo[]={"Olá ",null," tudo "," bem?"};
+		int a []=new int[13];
+	}
+	public double soma(int a, int b) {
+		return a+b;
+	}
+
+}

@@ -1,0 +1,11 @@
+package funcionario;
+
+public class Main {
+
+	public static void main(String[] args) {
+		AlunoTrabalhor at=new AlunoTrabalhor();
+		
+
+	}
+
+}

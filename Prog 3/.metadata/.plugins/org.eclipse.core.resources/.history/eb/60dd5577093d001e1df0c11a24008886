@@ -1,0 +1,5 @@
+package mainThrow;
+
+public class NumeroInvalidoException extends RuntimeException{
+//Devemos identificar o erro que quereom
+}

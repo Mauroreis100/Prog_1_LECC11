@@ -1,0 +1,12 @@
+package classcast;
+
+public class Castando {
+	float carro;
+
+	public static void main(String[] args) {
+		//ClassCastException
+		Objecto objecto = new Objecto();
+		
+		int namber = (Castando) objecto.numero;
+	}
+}

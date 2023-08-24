@@ -1,0 +1,12 @@
+package funcionario;
+
+public class Professor extends Funcionario {
+	int salario;
+
+	if(salario>0)
+	{
+
+	public void setSalario(int salario) {
+		this.salario = salario;
+	}
+}}

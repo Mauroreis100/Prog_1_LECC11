@@ -1,0 +1,10 @@
+package classcast;
+
+public class Castando {
+	float carro;
+
+	public static void main(String[] args) {
+		Objecto objecto = new Objecto();
+		int namber = (Casting) objecto.numero;
+	}
+}

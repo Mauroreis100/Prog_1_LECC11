@@ -1,0 +1,23 @@
+package mainThrow;
+
+public class Atirando {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+			
+	}
+	private double valorAPagar;
+	public void pagarPropina(double valor)
+	{
+		if(valor < 0)
+		{
+			throw new IllegalArgumentException("O valor deve ser maior que0, voce passou o valor: "+ valor);
+		} e
+		lse
+		{
+			valorAPagar = valorAPagar + valor;
+		}
+	}
+
+}
