@@ -1,9 +1,0 @@
-package mainThrow;
-
-public class NumeroInvalidoException extends RuntimeException{
-//Devemos identificar e extender o tipo de erro erro que quereo
-	
-	public NumeroInvalidoException Exception (String mensagem) {
-		
-	}
-}

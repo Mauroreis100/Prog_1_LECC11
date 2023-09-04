@@ -1,7 +1,0 @@
-package funcionario;
-
-public class HoraInvalidaException {
-	public HoraInvalidaException(String message) {
-		super(message);
-	}
-}
