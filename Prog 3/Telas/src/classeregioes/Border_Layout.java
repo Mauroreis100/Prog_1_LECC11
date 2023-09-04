@@ -34,7 +34,7 @@ public class Border_Layout {
 		jf.setLocation(100,100);//Onde o programa vai arrancar
 		jf.setLocationRelativeTo(null);//Onde o programa vai arrancar
 		jf.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);//Quando o utilizador clicar no x. Mata todos os frames
-		jf.setLayout(new BorderLayout(BorderLayout.CENTER));
+		//jf.setLayout(new FlowLayout(FlowLayout.CENTER));
 		//jf.setLayout(new FlowLayout(FlowLayout.LEFT));
 		//jf.setLayout(new FlowLayout(align,altura,espaco entre eles));
 		
@@ -48,9 +48,13 @@ public class Border_Layout {
 		
 		
 		//Adicionar Botões
-		jf.add();
-		jf.add();
-		jf.add();//Adicionar o botão na tela
+		jf.add(bt_north, BorderLayout.NORTH);
+		jf.add(bt_west, BorderLayout.WEST);
+		jf.add(bt_east, BorderLayout.EAST);
+		jf.add(bt_center, BorderLayout.CENTER);
+		jf.add(bt_south, BorderLayout.SOUTH);
+//		jf.add(tf_campoInicial);
+//		jf.add(bt_submeter);//Adicionar o botão na tela
 		
 		/*jf.add(bt_submeter, BorderLayout.EAST);//Adicionar o botão na telajf.add(lb_introduza, BorderLayout.WEST);jf.add(tf_campoInicial, BorderLayout.SOUTH);*/
 		
