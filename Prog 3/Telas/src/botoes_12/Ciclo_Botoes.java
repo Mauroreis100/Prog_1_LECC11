@@ -27,11 +27,11 @@ public class Ciclo_Botoes {
 
 		// Como os botões devem aparecer
 
-		int a=0;
+		int a = 0;
 		for (int i = 1; i <= 12; i++) {
 			bt_S = new JButton("#" + i);
 			jf.add(bt_S);
-			a=i;
+			a = i;
 		}
 
 		jf.setTitle("12 Botões");// Nome da tela
@@ -40,7 +40,7 @@ public class Ciclo_Botoes {
 		jf.setLocationRelativeTo(null);
 		jf.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		jf.setLayout(new GridLayout(3, a, 10, 10));// Linhas x Colunas
-jf.setResizable(false);//Pode resuze or not
+		jf.setResizable(false);// Pode resuze or not
 		// jf.setLayout(new BorderLayoutFrame());
 		// jf.setLayout(new FlowLayout());//
 

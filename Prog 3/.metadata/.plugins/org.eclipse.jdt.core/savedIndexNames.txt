@@ -4,6 +4,5 @@ INDEX VERSION 1.131+M:\Prog_1_LECC11\Prog 3\.metadata\.plugins\org.eclipse.jdt.c
 4116325998.index
 4290924337.index
 3502676983.index
-5921056.index
 3831588178.index
 1865797976.index
