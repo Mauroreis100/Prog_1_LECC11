@@ -1,9 +1,0 @@
-package funcionarios;
-
-public class Designer {
-
-	public Designer() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

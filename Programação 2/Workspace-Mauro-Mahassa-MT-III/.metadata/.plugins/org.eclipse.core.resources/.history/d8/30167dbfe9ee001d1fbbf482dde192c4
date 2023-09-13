@@ -1,9 +1,0 @@
-package funcionarios;
-
-public class Desenvolvedor {
-
-	public Desenvolvedor() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
