@@ -1,9 +1,0 @@
-import java.util.Scanner;
-import java.util.Arrays;
-public class Numero3{
-	public static void main(String args[]){
-	Scanner ler=new Scanner(System.in);
-	char telefonou=ler.next.charAt(0);
-System.out.println(telefonou);
-	}
-}

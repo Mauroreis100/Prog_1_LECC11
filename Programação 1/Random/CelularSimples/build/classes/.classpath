@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry excluding="CelularSimples/src/|Java CRUD Using ArrayList/Company/src/|College/src/" kind="src" path=""/>
-	<classpathentry kind="src" path="CelularSimples/src"/>
-	<classpathentry kind="src" path="College/src"/>
-	<classpathentry kind="src" path="Java CRUD Using ArrayList/Company/src"/>
-	<classpathentry kind="output" path="CelularSimples/build/classes"/>
-</classpath>
