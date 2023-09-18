@@ -1,7 +1,5 @@
 package componentes;
 
-import java.awt.GridLayout;
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -17,13 +15,16 @@ public class Imagens {
 	private JLabel lb_azul;
 	private JLabel lb_amarelo;
 	private JLabel lb_verde;
+	private JLabel lb_titulo;
 	
 	private JButton bt_Cancelar;
 	private JButton bt_Submeter;
 	private JButton bt_Limpar;
 	
+	private JComboBox cb_frutas;
 	private JPanel jp;
 	
+	String []frutas;
 	
 
 	public Imagens() {
@@ -31,11 +32,14 @@ public class Imagens {
 		imagem=new ImageIcon("src/componentes/assets/ISUTC.png.png");
 		lb_imagem=new JLabel(imagem);
 		jp=new JPanel();
-		
+		frutas=new String[]{"Apple","Orange","Grape",""}; 
 		lb_vermelho=new JLabel("Cor Vermelho");
 		lb_azul=new JLabel("Cor Azul");
 		lb_verde=new JLabel("Cor Verde");
 		lb_amarelo=new JLabel("Cor Amarelo");
+		lb_titulo=new JLabel("Tela de Registros");
+		cb_frutas=new JComboBox(frutas);
+		
 		
 		bt_Cancelar=new JButton("Cancelar");
 		bt_Submeter=new JButton("Submeter");
@@ -48,6 +52,7 @@ public class Imagens {
 		jf.setLocationRelativeTo(null);//Onde o programa vai arrancar
 		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//Quando o utilizador clicar no x. Mata todos os frames
 		
+		lb_titulo.setFont(new Font("Times New Roman",Font.BOLD,30));
 		lb_vermelho.setForeground(Color.red);
 		lb_azul.setForeground(Color.blue);
 		lb_verde.setForeground(Color.green);
@@ -62,8 +67,9 @@ public class Imagens {
 		bt_Submeter.setForeground(Color.black);
 
 		
-		jp.setLayout(new GridLayout(4,2,10,10));
+		jp.setLayout(new GridLayout(5,2,10,10));
 		jf.add(lb_imagem);
+		jf.add(lb_titulo);
 		jp.add(lb_vermelho);
 		jp.add(bt_Limpar);
 		jp.add(lb_amarelo);
@@ -72,6 +78,7 @@ public class Imagens {
 		jf.add(lb_verde);
 		jp.add(bt_Submeter);
 		jf.add(BorderLayout.WEST, jp);
+		jf.add(cb_frutas);
 		jf.setLayout(new FlowLayout(FlowLayout.LEFT));
 		jf.setVisible(true);
 	}
