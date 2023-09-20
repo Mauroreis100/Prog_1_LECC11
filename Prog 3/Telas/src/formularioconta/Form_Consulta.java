@@ -1,0 +1,132 @@
+package formularioconta;
+import javax.swing.*;
+import java.awt.*;
+public class Form_Consulta {
+private JFrame jf_consulta;
+
+private JLabel jb_codigo;
+private JLabel jb_nome;
+private JLabel jb_endereco;
+private JLabel jb_telefone;
+private JLabel jb_cpf;
+private JLabel jb_num_conta;
+
+private TextField tf_codigo;
+private TextField tf_num_conta;
+private TextField tf_nome;
+private TextField tf_endereco;
+private TextField tf_cpf;
+private TextField tf_telefone;
+
+private JRadioButton rb_contaCorrente;
+private JRadioButton rb_contaPoupanca;
+
+private JButton bt_consultar;
+private JButton bt_atualizar;
+private JButton bt_fechar;
+
+private JPanel jp_top;
+private JPanel jp_middle;
+private JPanel jp_bottom;
+private JPanel jp_footer;
+
+private ButtonGroup bg_opcoes;
+
+private JSeparator sp_linha;
+Form_Consulta(){
+	jf_consulta=new JFrame();
+	
+	//Labels
+	jb_codigo=new JLabel("Código da Agência");
+	jb_num_conta=new JLabel("Número da conta");
+	jb_nome=new JLabel("Nome");
+	jb_endereco=new JLabel("Endereço");
+	jb_telefone=new JLabel("Telefone");
+	jb_cpf=new JLabel("CPF");
+	
+	//Campos de texto
+	tf_codigo=new TextField(25);
+	tf_num_conta=new TextField(25);
+	tf_nome=new TextField(25);
+	tf_endereco=new TextField(25);
+	tf_cpf=new TextField(25);
+	tf_telefone=new TextField(25);
+	
+	//Radio Buttons and Group
+	rb_contaCorrente=new JRadioButton("Conta Corrente");
+	rb_contaPoupanca=new JRadioButton("Conta Poupança");
+	bg_opcoes=new ButtonGroup();
+	
+	//Butões
+	bt_consultar=new JButton("Consultar");
+	bt_atualizar=new JButton("Atualizar");
+	bt_fechar=new JButton("Fechar");
+	
+	
+	//Panels
+	jp_top=new JPanel();
+	jp_middle=new JPanel();
+	jp_bottom=new JPanel();
+	jp_footer=new JPanel();
+	
+	//Separador
+	sp_linha=new JSeparator();
+
+	// --------------------------------------------------------------------------------------------
+	jf_consulta.setTitle("Linguagem de Programação II");// O tittulo da janela.
+	jf_consulta.setSize(700, 300);// Width and Height em pixels.[Comprimento, Largura]
+	jf_consulta.setLocation(100, 100);// Onde o programa vai arrancar
+	jf_consulta.setLocationRelativeTo(null);// Onde o programa vai arrancar
+	jf_consulta.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// Quando o utilizador clicar no x. Mata todos os frames
+	jf_consulta.setLayout(new FlowLayout(8,1,10));
+	jp_top.setLayout(new FlowLayout(1,2,2));
+	jp_middle.setLayout(new GridLayout(4,1));
+	jp_bottom.setLayout(new GridLayout(1,2));
+
+// ------------------------------------------------------------------------------------------
+	
+	//Radio Buttons
+	bg_opcoes.add(bt_consultar);
+	bg_opcoes.add(bt_atualizar);
+	bg_opcoes.add(bt_fechar);
+	
+	//Top Label
+	jp_top.add(jb_codigo);
+	jp_top.add(tf_codigo);
+	jp_top.add(jb_num_conta);
+	jp_top.add(tf_num_conta);
+
+	//Divisão
+	
+	//Meio
+	jp_middle.add(jb_nome);
+	jp_middle.add(tf_nome);
+	jp_middle.add(jb_endereco);
+	jp_middle.add(tf_endereco);
+	jp_middle.add(jb_telefone);
+	jp_middle.add(tf_telefone);
+	jp_middle.add(jb_cpf);
+	jp_middle.add(tf_cpf);
+	
+	//BOTTOM
+	jp_bottom.add(rb_contaCorrente);
+	jp_bottom.add(rb_contaPoupanca);
+	
+	//FOOTER
+	jp_footer.add(bt_consultar);
+	jp_footer.add(bt_atualizar);
+	jp_footer.add(bt_fechar);
+	
+	//ADIÇÃO AO FRAME
+	jf_consulta.add(jp_top);
+	jf_consulta.add(sp_linha);
+	jf_consulta.add(jp_middle);
+	jf_consulta.add(jp_bottom);
+	jf_consulta.add(sp_linha);
+	jf_consulta.add(jp_footer);
+	
+	jf_consulta.setVisible(true);
+	
+}
+
+}
