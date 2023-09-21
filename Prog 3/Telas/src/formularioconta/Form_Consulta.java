@@ -1,5 +1,7 @@
 package formularioconta;
 import javax.swing.*;
+import javax.swing.border.LineBorder;
+
 import java.awt.*;
 public class Form_Consulta {
 private JFrame jf_consulta;
@@ -32,21 +34,22 @@ private JPanel jp_footer;
 
 private ButtonGroup bg_opcoes;
 
-private JSeparator sp_linha;
+private JSeparator sp_linha1;
+private JSeparator sp_linha2;
 Form_Consulta(){
 	jf_consulta=new JFrame();
 	
 	//Labels
-	jb_codigo=new JLabel("Código da Agência");
-	jb_num_conta=new JLabel("Número da conta");
-	jb_nome=new JLabel("Nome");
-	jb_endereco=new JLabel("Endereço");
-	jb_telefone=new JLabel("Telefone");
-	jb_cpf=new JLabel("CPF");
+	jb_codigo=new JLabel("Código da Agência:");
+	jb_num_conta=new JLabel("Número da conta:");
+	jb_nome=new JLabel("Nome:");
+	jb_endereco=new JLabel("Endereço:");
+	jb_telefone=new JLabel("Telefone:");
+	jb_cpf=new JLabel("CPF:");
 	
 	//Campos de texto
-	tf_codigo=new TextField(25);
-	tf_num_conta=new TextField(25);
+	tf_codigo=new TextField(10);
+	tf_num_conta=new TextField(10);
 	tf_nome=new TextField(25);
 	tf_endereco=new TextField(25);
 	tf_cpf=new TextField(25);
@@ -70,25 +73,31 @@ Form_Consulta(){
 	jp_footer=new JPanel();
 	
 	//Separador
-	sp_linha=new JSeparator();
+	sp_linha1=new JSeparator();
+	sp_linha2=new JSeparator();
 
 	// --------------------------------------------------------------------------------------------
 	jf_consulta.setTitle("Linguagem de Programação II");// O tittulo da janela.
-	jf_consulta.setSize(700, 300);// Width and Height em pixels.[Comprimento, Largura]
+	jf_consulta.setSize(500, 300);// Width and Height em pixels.[Comprimento, Largura]
 	jf_consulta.setLocation(100, 100);// Onde o programa vai arrancar
 	jf_consulta.setLocationRelativeTo(null);// Onde o programa vai arrancar
 	jf_consulta.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// Quando o utilizador clicar no x. Mata todos os frames
-	jf_consulta.setLayout(new FlowLayout(8,1,10));
+	jp_top.setBorder(new LineBorder(Color.BLACK,3));
+	jp_middle.setBorder(new LineBorder(Color.BLACK,3));
+	jp_bottom.setBorder(new LineBorder(Color.BLACK,3));
+	jp_footer.setBorder(new LineBorder(Color.BLACK,3));
+	//Flow Layout(hORIZONTAL SPACING, VERTICAL SPACING)
+	jf_consulta.setLayout(new FlowLayout(FlowLayout.CENTER,10,10));
 	jp_top.setLayout(new FlowLayout(1,2,2));
 	jp_middle.setLayout(new GridLayout(4,1));
-	jp_bottom.setLayout(new GridLayout(1,2));
-
+	jp_bottom.setLayout(new GridLayout(1,2,10,0));
+//	jf_consulta.setLayout(new BorderLayout(8,9));
 // ------------------------------------------------------------------------------------------
 	
 	//Radio Buttons
-	bg_opcoes.add(bt_consultar);
-	bg_opcoes.add(bt_atualizar);
-	bg_opcoes.add(bt_fechar);
+	bg_opcoes.add(rb_contaCorrente);
+	bg_opcoes.add(rb_contaPoupanca);
+	
 	
 	//Top Label
 	jp_top.add(jb_codigo);
@@ -119,11 +128,13 @@ Form_Consulta(){
 	
 	//ADIÇÃO AO FRAME
 	jf_consulta.add(jp_top);
-	jf_consulta.add(sp_linha);
-	jf_consulta.add(jp_middle);
+	jf_consulta.add(sp_linha1);//JSeparator
+	
+	jf_consulta.add(jp_middle, BorderLayout.CENTER);
 	jf_consulta.add(jp_bottom);
-	jf_consulta.add(sp_linha);
+	jf_consulta.add(sp_linha2);//JSeparator
 	jf_consulta.add(jp_footer);
+	
 	
 	jf_consulta.setVisible(true);
 	
