@@ -137,11 +137,7 @@ Form_Consulta(){
 	
 	
 	jf_consulta.setVisible(true);
-	/*Sempre que quisermos dar eventos temos que ter
-	 * o implements ActionListener, então devemos implementar os metodos
-	 * da classe ActionListener e vai ter um novo método chamado
-	 * ActoinPerformed listener es~toa no AWT
-	 * */
+	
 
 }
 

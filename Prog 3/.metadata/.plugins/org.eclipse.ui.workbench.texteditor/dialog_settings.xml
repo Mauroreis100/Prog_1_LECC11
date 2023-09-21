@@ -6,12 +6,14 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="jta_comentario"/>
+		<item key="selection" value="pf_senha"/>
 		<list key="findhistory">
+			<item value="lb_senha"/>
 			<item value="jta"/>
 			<item value="nu"/>
 		</list>
 		<list key="replacehistory">
+			<item value="pf_senha"/>
 			<item value="jta_comentario"/>
 		</list>
 	</section>

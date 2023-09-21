@@ -23,7 +23,7 @@ public class Eventos implements ActionListener {
 		jf.setLocationRelativeTo(null);// Onde o programa vai arrancar
 		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// Quando o utilizador clicar no x. Mata todos os frames
 		// --------------------------------------------------------------------------------------------------------------
-
+		
 		// Eventos -----------------
 		bt_submeter.addActionListener(this);
 		// Eventos -----------------
