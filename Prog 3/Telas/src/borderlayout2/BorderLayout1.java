@@ -34,7 +34,7 @@ public class BorderLayout1 {
 		jf.setLocation(100, 100);// Onde o programa vai arrancar
 		jf.setLocationRelativeTo(null);// Onde o programa vai arrancar
 		jf.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);// Quando o utilizador clicar no x. Mata todos os frames
-		jf.setLayout(new BorderLayout());
+//		jf.setLayout(new BorderLayout());
 //		jp_buttons.setLayout(new GridLayout(3,1));
 //		jp_menus.setLayout(new BorderLayout());
 // 		Adicionar Botões

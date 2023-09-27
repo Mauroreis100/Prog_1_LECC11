@@ -1,0 +1,10 @@
+package exercicio1z;
+import javax.swing.*;
+import java.awt.*;
+public class InterfaceGrafica {
+private JLabel lb_banner;
+
+	InterfaceGrafica(){
+	
+}
+}

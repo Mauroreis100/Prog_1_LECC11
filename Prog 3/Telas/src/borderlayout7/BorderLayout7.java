@@ -33,21 +33,7 @@ public class BorderLayout7 {
 
 		jp_menus=new JPanel();
 		// Inicializações de variáveis:
-		bt_N1 = new JButton("North");// Inicializei o componente dentro do construtor
-		bt_S1=new JButton("South");
-		bt_W1 = new JButton("West"); // Inicializei o componente dentro do construtor
-		bt_E1 = new JButton("East");// Inicializei o componente dentro do construtor
-		bt_NW = new JButton("Northwest");// Inicializei o componente dentro do construtor
-		bt_N = new JButton("North");// Inicializei o componente dentro do construtor
-		bt_NE = new JButton("Northeast");// Inicializei o componente dentro do construtor
-		bt_W = new JButton("West");// Inicializei o componente dentro do construtor
-		bt_C = new JButton("Center");// Inicializei o componente dentro do construtor
-		bt_E = new JButton("West");// Inicializei o componente dentro do construtor
-		bt_SW = new JButton("Southwest");// Inicializei o componente dentro do construtor
-		bt_S = new JButton("South");// Inicializei o componente dentro do construtor
-		bt_SE = new JButton("Southeast");// Inicializei o componente dentro do construtor
-		
-		
+
 		// Inicializar componentes
 		jf.setTitle("Border_Layout1.exe");// O tittulo da janela.
 		jf.setSize(500, 500);// Width and Height em pixels.[Comprimento, Largura]
@@ -59,21 +45,21 @@ public class BorderLayout7 {
 		jp_menus.setLayout(new GridLayout(3,3,10,170));
 		
 // 		Adicionar no PAINEL
-		jp_menus.add(bt_NW);
-		jp_menus.add(bt_N);
-		jp_menus.add(bt_NE);
-		jp_menus.add(bt_W);
-		jp_menus.add(bt_C);
-		jp_menus.add(bt_E);
-		jp_menus.add(bt_SW);
-		jp_menus.add(bt_S);
-		jp_menus.add(bt_SE);
-
-		jf.add(BorderLayout.NORTH, bt_N1);// O border Layout me diz a posição do botão (nome do componente, Posição/regia)
-		jf.add(BorderLayout.WEST,bt_W1);
-		jf.add(jp_menus, BorderLayout.CENTER);
-		jf.add(bt_E1, BorderLayout.EAST);
-		jf.add(bt_S1, BorderLayout.SOUTH);
+//		jp_menus.add(bt_NW);
+//		jp_menus.add(bt_N);
+//		jp_menus.add(bt_NE);
+//		jp_menus.add(bt_W);
+//		jp_menus.add(bt_C);
+//		jp_menus.add(bt_E);
+//		jp_menus.add(bt_SW);
+//		jp_menus.add(bt_S);
+//		jp_menus.add(bt_SE);
+//
+//		jf.add(BorderLayout.NORTH, bt_N1);// O border Layout me diz a posição do botão (nome do componente, Posição/regia)
+//		jf.add(BorderLayout.WEST,bt_W1);
+//		jf.add(jp_menus, BorderLayout.CENTER);
+//		jf.add(bt_E1, BorderLayout.EAST);
+//		jf.add(bt_S1, BorderLayout.SOUTH);
 
 		jf.setVisible(true);
 	}

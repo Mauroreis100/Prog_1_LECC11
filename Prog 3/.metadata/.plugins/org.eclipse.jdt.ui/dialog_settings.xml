@@ -52,6 +52,12 @@
 	<section name="nls_accessor_history">
 		<section name="0">
 			<item key="accessorName" value="Messages"/>
+			<item key="accessorPackage" value="=Telas/src&lt;borderlayout7"/>
+			<item key="bundleName" value="messages.properties"/>
+			<item key="bundlePackage" value="=Telas/src&lt;borderlayout7"/>
+		</section>
+		<section name="1">
+			<item key="accessorName" value="Messages"/>
 			<item key="accessorPackage" value="=Eventos/src&lt;autenticacao"/>
 			<item key="bundleName" value="messages.properties"/>
 			<item key="bundlePackage" value="=Eventos/src&lt;autenticacao"/>

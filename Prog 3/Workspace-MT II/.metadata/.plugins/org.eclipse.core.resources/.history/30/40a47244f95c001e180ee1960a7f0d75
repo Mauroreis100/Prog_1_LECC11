@@ -1,0 +1,5 @@
+package exercicio1z;
+
+public class Main {
+new InterfaceGrafica();
+}

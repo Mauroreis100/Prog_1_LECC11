@@ -26,7 +26,7 @@ public class RegistroFrutas {
 		jp_elementos = new JPanel();
 
 		lb_titulo = new JLabel("Tela de registro de frutas");
-		lb_titulo.setFont(new Font("Aerial", Font.ITALIC, 30));
+		lb_titulo.setFont(new Font("Aerial", Font.BOLD, 30));
 		lb_titulo.setForeground(Color.blue);
 		lb_escolha = new JLabel("Escolha a fruta favorita: ");
 
