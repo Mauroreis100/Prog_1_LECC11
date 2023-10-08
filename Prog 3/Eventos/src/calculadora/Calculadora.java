@@ -31,6 +31,7 @@ public class Calculadora implements ActionListener{
 		tf_numero1=new TextField(10);
 		tf_numero2=new TextField(10);
 		tf_resultado=new TextField(10);
+		tf_resultado.setEnabled(false);//Inválido
 		
 		bt_OK=new JButton("OK");
 		// ---------------------------------------------------------------------------------------------------------------
