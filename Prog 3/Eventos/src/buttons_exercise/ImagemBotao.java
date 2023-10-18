@@ -1,9 +1,12 @@
 package buttons_exercise;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.*;
 import javax.swing.*;
 
-public class ImagemBotao {
+public class ImagemBotao extends JFrame implements ActionListener{
 //Essas imagens são muito pequenas e existem na internet, icone
 	private JButton bt_cancelar;
 	private JButton bt_submeter;
@@ -16,11 +19,19 @@ public class ImagemBotao {
 	private ImageIcon img_anterior;
 	private ImageIcon img_proximo;
 	private ImageIcon img_novo;
-
-	private JFrame jf;
-
+/*
+ * Sockets usamos para conectar 2 computadores e Threads executação de tarefas com tempo, 
+ * Duas páginas de Sockets
+ * Duas páginas de threads
+ * Fazer o Socket Cliente
+ * Fazer o Socket Servidor
+ * Fazer Chat- 
+ * Segunda feira Entrega e Correcção
+ * Dica: para comunicar deves conhecer o IP do servidor e a porta
+ * 
+ * */
 	ImagemBotao() {
-		jf = new JFrame();
+	
 		img_cancelar = new ImageIcon("src/buttons_exercise/cancelar.png");
 		img_submeter = new ImageIcon("src/buttons_exercise/submeter.png");
 		img_anterior = new ImageIcon("src/buttons_exercise/anterior.png");
@@ -34,19 +45,24 @@ public class ImagemBotao {
 		bt_novo = new JButton("Novo", img_novo);
 
 		// ---------------------------------------------------------------------------------------------------------------
-		jf.setTitle("Imagem no botãa");// O tittulo da janela.
-		jf.setSize(700, 300);// Width and Height em pixels.[Comprimento, Largura]
-		jf.setLocation(100, 100);// Onde o programa vai arrancar
-		jf.setLocationRelativeTo(null);// Onde o programa vai arrancar
-		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// Quando o utilizador clicar no x. Mata todos os frames
+		this.setTitle("Imagem no botãa");// O tittulo da janela.
+		this.setSize(700, 300);// Width and Height em pixels.[Comprimento, Largura]
+		this.setLocation(100, 100);// Onde o programa vai arrancar
+		this.setLocationRelativeTo(null);// Onde o programa vai arrancar
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// Quando o utilizador clicar no x. Mata todos os frames
 		// --------------------------------------------------------------------------------------------------------------
-		jf.setLayout(new GridLayout(3, 2, 30, 10));
-		jf.add(bt_cancelar);
-		jf.add(bt_submeter);
-		jf.add(bt_cancelar);
-		jf.add(bt_anterior);
-		jf.add(bt_proximo);
-		jf.add(bt_novo);
-		jf.setVisible(true);
+		this.setLayout(new GridLayout(3, 2, 30, 10));
+		this.add(bt_cancelar);
+		this.add(bt_submeter);
+		this.add(bt_cancelar);
+		this.add(bt_anterior);
+		this.add(bt_proximo);
+		this.add(bt_novo);
+		this.setVisible(true);
+	}
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 }

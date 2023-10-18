@@ -1,4 +1,4 @@
-package tpc_botao_imagem;
+package introducao;
 
 import java.awt.*;
 
@@ -8,7 +8,7 @@ import javax.swing.*;
 
 import pratos.PratosCheckBox;
 
-public class Botoes_Imagens extends JFrame implements ActionListener{
+public class Botoes_Imagem extends JFrame implements ActionListener{
 	private JButton bt_cancelar;
 	private JButton bt_submeter;
 	private JButton bt_anterior;
@@ -27,7 +27,7 @@ public class Botoes_Imagens extends JFrame implements ActionListener{
 	
 //	private JFrame jf;
 
-	Botoes_Imagens(){
+	Botoes_Imagem(){
 		
 		img_cancelar = new ImageIcon("src/buttons_exercise/cancelar.png");
 		img_submeter = new ImageIcon("src/buttons_exercise/submeter.png");
@@ -92,3 +92,4 @@ public class Botoes_Imagens extends JFrame implements ActionListener{
 	}
 	
 }
+

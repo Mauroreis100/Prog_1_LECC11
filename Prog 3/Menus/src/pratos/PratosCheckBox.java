@@ -15,18 +15,9 @@ public class PratosCheckBox extends JFrame implements ActionListener{
 	private JCheckBox jcb_prato4;
 	private JCheckBox jcb_prato5;
 	private JCheckBox jcb_prato6;
-	
-	private JMenuBar jb;
-	private JMenu jm_menu;
-	private JMenuItem jm_jmi;
 
 	public PratosCheckBox() {
 
-		jb=new JMenuBar();
-		this.setJMenuBar(jb);
-		jm_menu=new JMenu("Menu");
-		jb.add(jm_menu);
-		
 		jcb_prato1 = new JCheckBox("Feijoada + Dobrada");
 		jcb_prato2 = new JCheckBox("Tonga's");
 		jcb_prato3 = new JCheckBox("Frango");
@@ -47,11 +38,6 @@ public class PratosCheckBox extends JFrame implements ActionListener{
 		jcb_prato4.setMnemonic(KeyEvent.VK_B);
 		jcb_prato5.setMnemonic(KeyEvent.VK_G);
 		jcb_prato6.setMnemonic(KeyEvent.VK_P);
-		
-		
-		//MENU SET
-		
-		
 		// ---------------------------------------------------------------------------------------------------------------
 		this.setTitle("Pratos");// O tittulo da janela.
 		this.setSize(700, 300);// Width and Height em pixels.[Comprimento, Largura]
@@ -66,7 +52,7 @@ public class PratosCheckBox extends JFrame implements ActionListener{
 		this.add(jcb_prato4);
 		this.add(jcb_prato5);
 		this.add(jcb_prato6);
-		this.add(jb);
+		
 		jcb_prato1.addActionListener(this);
 		
 //		this.setVisible(true); Como n#ao é a pprincipal e é chamada
