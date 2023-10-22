@@ -24,7 +24,7 @@ public class PratosCheckBox extends JFrame implements ActionListener{
 
 		jb=new JMenuBar();
 		this.setJMenuBar(jb);
-		jm_menu=new JMenu("Menu");
+		jm_menu=new JMenu("Menu 1");
 		jb.add(jm_menu);
 		
 		jcb_prato1 = new JCheckBox("Feijoada + Dobrada");
@@ -59,14 +59,15 @@ public class PratosCheckBox extends JFrame implements ActionListener{
 		this.setLocationRelativeTo(null);// Onde o programa vai arrancar
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// Quando o utilizador clicar no x. Mata todos os frames
 		// --------------------------------------------------------------------------------------------------------------
-		this.setLayout(new GridLayout(6,1));
+		this.setLayout(new GridLayout(10,1));
 		this.add(jcb_prato1);
 		this.add(jcb_prato2);
 		this.add(jcb_prato3);
 		this.add(jcb_prato4);
 		this.add(jcb_prato5);
 		this.add(jcb_prato6);
-		this.add(jb);
+		this.add(jb, BorderLayout.NORTH);
+		
 		jcb_prato1.addActionListener(this);
 		
 //		this.setVisible(true); Como n#ao é a pprincipal e é chamada
