@@ -86,8 +86,8 @@ private JTextArea jta_azul;
 		jta_azul.setBackground(Color.cyan);
 			//Scroll
 			sc=new JScrollPane(jta_azul);
-			sc.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-			sc.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+			sc.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+			sc.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 			
 		//Lista
 		variados=new String[] {"Futebol","Andebol","Internet","Ler"};
