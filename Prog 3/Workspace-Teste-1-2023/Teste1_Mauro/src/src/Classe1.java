@@ -151,8 +151,8 @@ public class Classe1 implements ActionListener {
 				account.setValorInicial(valorIni);
 			} while (num < 0);
 
-			Classe2 home = new Classe2();
-			home.objecto(account);
+			Classe2 home = new Classe2(account);
+		
 			System.out.println("INICIADO COM SUCESSO COM" + account.toString());
 			home.visibilidade();
 			jf_conta.setVisible(false);
