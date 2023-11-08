@@ -2064,3 +2064,13 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2023-11-07 15:59:35.908 -----------------------------------------------
+eclipse.buildId=4.26.0.20221201-1200
+java.version=17.0.8
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data M:\\Prog_1_LECC11\\Prog 3 -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2023-11-07 15:59:43.791
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
